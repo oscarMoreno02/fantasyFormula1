@@ -20,3 +20,16 @@ export var pilotos = [
 	{ id: 19, nombre: 'Alexander', apellido: 'Albon', nacionalidad: 'Tailandés', escuderia: 'WILLIAMS', puntuacion: 0, propiedadJugador: '', rol: '', srcFoto: '' },
 	{ id: 20, nombre: 'Logan', apellido: 'Sargeant', nacionalidad: 'Estadounidense', escuderia: 'WILLIAMS', puntuacion: 0, propiedadJugador: '', rol: '', srcFoto: '' }
 ];
+
+export var puntuaciones = [
+	{ posicion: 1, puntuacion: 25 },
+	{ posicion: 2, puntuacion: 18 },
+	{ posicion: 3, puntuacion: 15 },
+	{ posicion: 4, puntuacion: 12 },
+	{ posicion: 5, puntuacion: 10 },
+	{ posicion: 6, puntuacion: 8 },
+	{ posicion: 7, puntuacion: 6 },
+	{ posicion: 8, puntuacion: 4 },
+	{ posicion: 9, puntuacion: 2 },
+	{ posicion: 10, puntuacion: 1 }
+];
