@@ -197,3 +197,13 @@ export var grandesPremios = [{
     disputado: false
 }
 ]
+
+export class Usuario{
+	constructor(nom,ape,email,nick,password){
+		this.nombre=nom
+		this.apellido=ape
+		this.email=email
+		this.nick=nick
+		this.password=password
+	}
+}

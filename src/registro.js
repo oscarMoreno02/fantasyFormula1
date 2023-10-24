@@ -1,9 +1,13 @@
+import { Usuario } from "./objetos.js"
+
+
 const inputNombre = document.getElementById("nombre");
 const inputApellidos = document.getElementById("apellidos");
 const inputEmail = document.getElementById("email");
 const inputPassword1 = document.getElementById("password1");
 const inputPassword2 = document.getElementById("password2");
 const botonRegistro = document.getElementById("btn-registro");
+const inputNick=document.getElementById('nick')
 
 const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exReNoAp = /^.{2,20}$/
@@ -36,6 +40,7 @@ let mensaje=''
 let nombre=document.getElementById("nombre").value
 let apellidos=document.getElementById("apellidos").value
 let email=document.getElementById("email").value
+let nick=document.getElementById("nick").value
 let psw=document.getElementById("password1").value
 let psw2=document.getElementById("password2").value
 
@@ -63,9 +68,18 @@ if(!validarPassword(psw)['valido'] ||
 if(validaciones.includes(false)){
     console.log(mensaje)
 }else{
+     let user= new Usuario(nombre,apellidos,email,nick,psw)
+    establecerUsuario(user)
+
     window.location.href='index.html'
 }
 });
+
+
+function establecerUsuario(usuario){
+    var u=JSON.stringify(usuario)
+    localStorage.setItem('usuario',u)
+  }
 
 function validarPassword(password) {
     let mensaje ={}
