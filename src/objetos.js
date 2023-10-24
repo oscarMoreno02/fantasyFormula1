@@ -207,3 +207,6 @@ export class Usuario{
 		this.password=password
 	}
 }
+export class Credenciales{
+	 usuarios=[new Usuario('adm','adm','admin@dom.es','adm','123456')]
+}

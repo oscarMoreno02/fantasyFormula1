@@ -1,5 +1,5 @@
 import { Usuario } from "./objetos.js"
-
+import { Credenciales } from "./objetos.js"
 
 const inputNombre = document.getElementById("nombre");
 const inputApellidos = document.getElementById("apellidos");
@@ -13,6 +13,23 @@ const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exReNoAp = /^.{2,20}$/
 const exReNick = /^\w{4,10}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
+
+let datos=localStorage.getItem('credenciales')
+
+let credenciales=new Credenciales()
+if(datos!=null){
+    let c=JSON.parse(datos)
+   let lista=[]
+    for(const element of c.usuarios){
+       
+        let user= 
+        new Usuario(element.nombre,element.apellidos,element.email,element.nick,element.password)
+        lista.push(user)
+    }
+    credenciales.usuarios=lista
+}
+console.log(credenciales)
+
 
 
 
@@ -68,17 +85,23 @@ if(!validarPassword(psw)['valido'] ||
 if(validaciones.includes(false)){
     console.log(mensaje)
 }else{
-     let user= new Usuario(nombre,apellidos,email,nick,psw)
-    establecerUsuario(user)
-
-    window.location.href='index.html'
+    
+     if(comprobarRegistrados(email)){
+        let user= new Usuario(nombre,apellidos,email,nick,psw)
+        establecerUsuario(user)
+        window.location.href='index.html'
+     }else{
+        console.log('email registrado')
+    }
+   
 }
 });
 
 
 function establecerUsuario(usuario){
-    var u=JSON.stringify(usuario)
-    localStorage.setItem('usuario',u)
+    credenciales.usuarios.push(usuario)
+    let c=JSON.stringify(credenciales)
+    localStorage.setItem('credenciales',c)
   }
 
 function validarPassword(password) {
@@ -118,4 +141,13 @@ function validarMismaPassword(p1,p2){
    }
    
     return m
+}
+function comprobarRegistrados(e){
+    let c=true
+    for(const i of credenciales.usuarios){
+        if(i.email==e){
+            c=false
+        }
+    }
+    return c
 }
