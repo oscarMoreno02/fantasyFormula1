@@ -1,5 +1,4 @@
-import { Usuario } from "./objetos.js"
-import { Credenciales } from "./objetos.js"
+import { Usuario, Credenciales } from "./objetos.js"
 
 const inputNombre = document.getElementById("nombre");
 const inputApellidos = document.getElementById("apellidos");
@@ -69,7 +68,10 @@ if(!exReNoAp.test(apellidos)){
     mensaje=mensaje + 'Formato de los apellidos incorrecto \n'
     validaciones.push(false)
 }
-
+if(!exReNick.test(nick)){
+    mensaje=mensaje + 'Formato del nick incorrecto \n'
+    validaciones.push(false)
+}
 if(!exReEmail.test(email)){
     mensaje=mensaje + 'Formato de email incorrecto \n'
     validaciones.push(false)

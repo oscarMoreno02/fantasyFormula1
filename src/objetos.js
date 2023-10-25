@@ -201,7 +201,7 @@ export var grandesPremios = [{
 export class Usuario{
 	constructor(nom,ape,email,nick,password){
 		this.nombre=nom
-		this.apellido=ape
+		this.apellidos=ape
 		this.email=email
 		this.nick=nick
 		this.password=password
