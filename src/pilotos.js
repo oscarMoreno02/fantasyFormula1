@@ -8,7 +8,15 @@ let sectionPilotos = document.getElementById("section-pilotos");
 crearPilotos();
 
 function crearPilotos() {
-    for (let piloto of pilotos) {
+    let competidores = pilotos;
+
+    if (localStorage.getItem("pilotos")) {
+        competidores = JSON.parse(localStorage.getItem("pilotos"));
+    }
+
+    console.log(competidores);
+
+    for (let piloto of competidores) {
         let div = document.createElement("div");
         div.setAttribute("class", "tarjeta");
 
@@ -25,11 +33,11 @@ function crearPilotos() {
         div.appendChild(escuderia);
 
         let puntos = document.createElement("p");
-        puntos.textContent = piloto.puntuacion;
+        puntos.innerHTML = "<b>Puntuación:</b>" + piloto.puntuacion;
         div.appendChild(puntos);
 
         let propiedad = document.createElement("p");
-        propiedad.textContent = piloto.rol;
+        propiedad.innerHTML = "<b>Rol:</b>" + piloto.rol;
         div.appendChild(propiedad);
 
         sectionPilotos.appendChild(div);

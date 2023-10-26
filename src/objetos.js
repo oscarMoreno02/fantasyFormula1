@@ -221,18 +221,7 @@ export var pilotos = [
     },
 ];
 
-export var puntuaciones = [
-    { posicion: 1, puntuacion: 25 },
-    { posicion: 2, puntuacion: 18 },
-    { posicion: 3, puntuacion: 15 },
-    { posicion: 4, puntuacion: 12 },
-    { posicion: 5, puntuacion: 10 },
-    { posicion: 6, puntuacion: 8 },
-    { posicion: 7, puntuacion: 6 },
-    { posicion: 8, puntuacion: 4 },
-    { posicion: 9, puntuacion: 2 },
-    { posicion: 10, puntuacion: 1 },
-];
+export var puntuaciones = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
 
 export var grandesPremios = [
     {
@@ -241,7 +230,10 @@ export var grandesPremios = [
         ubicacion: "Sakhir",
         descripcion:
             "La longitud del circuito es de 5,412 kilómetros. Durante la carrera se dan 57 vueltas al circuito cubriendo una distancia final de 308,484 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -250,7 +242,10 @@ export var grandesPremios = [
         ubicacion: "Jeddah",
         descripcion:
             "La longitud del circuito es de 6,174 kilómetros. Durante la carrera se darán 50 vueltas al circuito cubriendo una distancia final de 308,700 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -259,7 +254,10 @@ export var grandesPremios = [
         ubicacion: "Melbourne",
         descripcion:
             "La longitud del circuito es de 5,303 kilómetros. Durante la carrera se dan 58 vueltas al circuito cubriendo una distancia final de 307,574 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -268,7 +266,10 @@ export var grandesPremios = [
         ubicacion: "Bakú",
         descripcion:
             ". La longitud del circuito es de 6,003 kilómetros. Durante la carrera se dan 51 vueltas al circuito cubriendo una distancia final de 306,153 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -277,7 +278,10 @@ export var grandesPremios = [
         ubicacion: "Miami",
         descripcion:
             "La longitud del circuito es de 5,412 kilómetros. Durante la carrera se dan 57 vueltas al circuito cubriendo una distancia final de 308,484 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -286,7 +290,10 @@ export var grandesPremios = [
         ubicacion: "Imola",
         descripcion:
             "La longitud del circuito es de 4,909 kilómetros. Durante la carrera se dan 63 vueltas al circuito cubriendo una distancia final de 309,267 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -295,7 +302,10 @@ export var grandesPremios = [
         ubicacion: "Montecarlo",
         descripcion:
             "La longitud del circuito es de 3,337 kilómetros. Durante la carrera se dan 78 vueltas al circuito cubriendo una distancia final de 260,286 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -304,7 +314,10 @@ export var grandesPremios = [
         ubicacion: "Montmeló (Barcelona)",
         descripcion:
             "La longitud del circuito es de 4,675 kilómetros. Durante la carrera se dan 66 vueltas al circuito cubriendo una distancia final de 308,550 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -313,7 +326,10 @@ export var grandesPremios = [
         ubicacion: "Montreal",
         descripcion:
             "La longitud del circuito es de 4,361 kilómetros. Durante la carrera se dan 70 vueltas al circuito cubriendo una distancia final de 305,270 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -322,7 +338,10 @@ export var grandesPremios = [
         ubicacion: "Spielberg (Austria)",
         descripcion:
             "La longitud del circuito es de 4,318 kilómetros. Durante la carrera se dan 71 vueltas al circuito cubriendo una distancia final de 306,578 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -331,7 +350,10 @@ export var grandesPremios = [
         ubicacion: "Silverstone (Reino Unido)",
         descripcion:
             "La longitud del circuito es de 5,891 kilómetros. Durante la carrera se dan 52 vueltas al circuito cubriendo una distancia final de 306,332 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -340,7 +362,10 @@ export var grandesPremios = [
         ubicacion: "Hungaroring (Budapest)",
         descripcion:
             "La longitud del circuito es de 4,381 kilómetros. Durante la carrera se dan 70 vueltas al circuito cubriendo una distancia final de 306,670 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -349,7 +374,10 @@ export var grandesPremios = [
         ubicacion: "Spa",
         descripcion:
             "La longitud del circuito es de 7,004 kilómetros. Durante la carrera se dan 44 vueltas al circuito cubriendo una distancia final de 308,176 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -358,7 +386,10 @@ export var grandesPremios = [
         ubicacion: "Zandvoort",
         descripcion:
             "La longitud del circuito es de 4,259 kilómetros. Durante la carrera se dan 72 vueltas al circuito cubriendo una distancia final de 306,648 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -367,7 +398,10 @@ export var grandesPremios = [
         ubicacion: "Monza",
         descripcion:
             "La longitud del circuito es de 5,793 kilómetros. Durante la carrera se dan 53 vueltas al circuito cubriendo una distancia final de 307,029 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -376,7 +410,10 @@ export var grandesPremios = [
         ubicacion: "Singapur",
         descripcion:
             "La longitud del circuito es de 5,063 kilómetros. Durante la carrera se dan 61 vueltas al circuito cubriendo una distancia final de 308,843 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -385,7 +422,10 @@ export var grandesPremios = [
         ubicacion: "Suzuka",
         descripcion:
             "La longitud del circuito es de 5,807 kilómetros. Durante la carrera se dan 53 vueltas al circuito cubriendo una distancia final de 307,771 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -394,7 +434,10 @@ export var grandesPremios = [
         ubicacion: "Lusail",
         descripcion:
             "La longitud del circuito es de 5,38 kilómetros. Durante la carrera se dan 57 vueltas al circuito cubriendo una distancia final de 306,660 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -403,7 +446,10 @@ export var grandesPremios = [
         ubicacion: "Austin (Texas)",
         descripcion:
             "La longitud del circuito es de 5,513 kilómetros. Durante la carrera se dan 56 vueltas al circuito cubriendo una distancia final de 308,728 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -412,7 +458,10 @@ export var grandesPremios = [
         ubicacion: "Ciudad de México",
         descripcion:
             "La longitud del circuito es de 4,304 kilómetros. Durante la carrera se dan 71 vueltas al circuito cubriendo una distancia final de 305,584 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -421,7 +470,10 @@ export var grandesPremios = [
         ubicacion: "São Paulo",
         descripcion:
             "La longitud del circuito es de 4,309 kilómetros. Durante la carrera se dan 71 vueltas al circuito cubriendo una distancia final de 305,939 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -430,7 +482,10 @@ export var grandesPremios = [
         ubicacion: "Las Vegas",
         descripcion:
             "La longitud del circuito es de 6,12 kilómetros. Durante la carrera se dan 50 vueltas al circuito cubriendo una distancia final de 306,000 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
     {
@@ -439,7 +494,10 @@ export var grandesPremios = [
         ubicacion: "Abu Dabi (Emiratos Árabes)",
         descripcion:
             "La longitud del circuito es de 5,281 kilómetros. Durante la carrera se dan 58 vueltas al circuito cubriendo una distancia final de 306,298 kilómetros.",
-        posiciones: "",
+        posiciones: [
+            { idPiloto: 0, posicion: 0 },
+            { idPiloto: 0, posicion: 0 },
+        ],
         disputado: false,
     },
 ];

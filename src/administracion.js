@@ -7,6 +7,7 @@ const botonLanzarCarrera = document.getElementById("lanzar-carrera");
 
 botonLanzarCarrera.addEventListener("click", function () {
     let carreras = disputarGranPremio(grandesPremios);
+    actualizarPuntuaciones();
     localStorage.setItem("grandes-premios", JSON.stringify(carreras));
     window.location.href = "./home.html";
 });
@@ -28,8 +29,6 @@ function disputarGranPremio() {
     }
 
     return carreras;
-
-    console.log(carreras);
 }
 
 function generarPosiciones(pilotos) {
@@ -49,4 +48,31 @@ function generarPosiciones(pilotos) {
     }
 
     return posiciones;
+}
+
+function actualizarPuntuaciones() {
+    let competidores = pilotos;
+    let carreras = grandesPremios;
+
+    if (localStorage.getItem("pilotos")) {
+        competidores = JSON.parse(localStorage.getItem("pilotos"));
+    }
+    if (localStorage.getItem("grandes-premios")) {
+        carreras = JSON.parse(localStorage.getItem("grandes-premios"));
+    }
+
+    for (let carrera of carreras) {
+        for (let posicion of carrera.posiciones) {
+            for (let piloto of competidores) {
+                if (piloto.id == posicion.idPiloto) {
+                    if (puntuaciones[posicion.posicion - 1]) {
+                        piloto.puntuacion +=
+                            puntuaciones[posicion.posicion - 1];
+                    }
+                }
+            }
+        }
+    }
+
+    localStorage.setItem("pilotos", JSON.stringify(competidores));
 }
