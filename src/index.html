@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="main.scss">
     <title>Fantasy Formula1</title>
 </head>
@@ -11,13 +13,13 @@
 <body>
     <h1>Fantasy F1</h1>
     <div class="formulario">
-        <label for="email">Correo electrónico:</label><input type="text" id="password" name="password">
-        <label for="password">Contraseña:</label><input type="text" id="password" name="password">
+        <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
+        <label for="password">Contraseña:</label><input type="password" id="password" name="password">
         <button id="login">Iniciar Sesión</button>
-        <button id="registro">Registrarse</button>
+        <button id="btn-registro">Registrarse</button>
     </div>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
