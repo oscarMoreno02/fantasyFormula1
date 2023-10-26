@@ -1,4 +1,8 @@
 import { pilotos } from "./objetos.js";
+import { crearMenu } from "./menu.js";
+
+crearMenu();
+
 let sectionPilotos = document.getElementById("section-pilotos");
 
 crearPilotos();
