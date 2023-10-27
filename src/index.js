@@ -37,7 +37,7 @@ if(msg['valido']){
     let u=JSON.stringify(msg['user'])
  
     localStorage.setItem('usuario',u)
-    window.location.href='inicio.html'
+    window.location.href='home.html'
     
 
 }else{
