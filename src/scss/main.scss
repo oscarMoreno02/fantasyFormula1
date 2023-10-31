@@ -1,15 +1,15 @@
-@import url(_normalize.scss);
-@import url(_skeleton.scss);
-@import url(_constantes.scss);
+@use "normalize";
+@use "skeleton";
+@use "constantes";
 
-@import url(_administracion.scss);
-@import url(_clasificacion.scss);
-@import url(_home.scss);
-@import url(_index.scss);
-@import url(_perfil.scss);
-@import url(_pilotos.scss);
-@import url(_registro.scss);
-@import url(_tus-pilotos.scss);
+@use "administracion";
+@use "clasificacion";
+@use "home";
+@use "index";
+@use "perfil";
+@use "pilotos";
+@use "registro";
+@use "tus-pilotos";
 
 .formulario {
     width: 350px;
