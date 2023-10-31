@@ -1,18 +1,18 @@
 {
-  "name": "fantasyformula1",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000f\u0000a\u0000n\u0000t\u0000a\u0000s\u0000y\u0000F\u0000o\u0000r\u0000m\u0000u\u0000l\u0000a\u00001\u0000\r\u0000 \u0000",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html src/registro.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.69.3"
-  }
+    "name": "fantasyformula1",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000f\u0000a\u0000n\u0000t\u0000a\u0000s\u0000y\u0000F\u0000o\u0000r\u0000m\u0000u\u0000l\u0000a\u00001\u0000\r\u0000 \u0000",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel src/*.html",
+        "build": "parcel build src/*.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.5",
+        "sass": "^1.69.3"
+    }
 }
