@@ -6,13 +6,13 @@ En este proyecto se realizará una réplica sencilla de Fantasy Football pero co
 
 ## Desarrolladores
 
--   [Óscar Moreno](https://github.com/oscarMoreno02)
--   [Elena Rodríguez](https://github.com/ElenaRgC)
+- [Óscar Moreno](https://github.com/oscarMoreno02)
+- [Elena Rodríguez](https://github.com/ElenaRgC)
 
 ## Dependencias
 
--   SASS
--   Bundler
+- SASS
+- Bundler
 
 ### Instalación de dependencias
 
@@ -66,15 +66,16 @@ Para que nuestro proyecto se compile, se puede ejecutar `npm run build` y se cre
 
 ### Fuentes
 
-| F1 Turbo                                                                                                                             | F1 Torque                                                                                                                                    | F1 Regular                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Ejemplo de la fuente F1 Turbo](https://imjustcreative.com/wp-content/uploads/2018/07/f1-turbo-typeface-font-download-1200x750.png) | ![Ejemplo de la fuente F1 Torque](https://imjustcreative.com/wp-content/uploads/2018/07/f1-torque-typeface-font-download-e1572958820115.png) | ![Ejemplo de la fuente F1 Regular](https://imjustcreative.com/wp-content/uploads/2018/07/f1-regular-typeface-font-download-e1572958798608.png) |
+ | F1 Torque                                                                                                                                    | F1 Regular                                                                                                                                     | Titillium Web                                            |
+ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+ | ![Ejemplo de la fuente F1 Torque](https://imjustcreative.com/wp-content/uploads/2018/07/f1-torque-typeface-font-download-e1572958820115.png) | ![Ejemplo de la fuente F1 Regular](https://imjustcreative.com/wp-content/uploads/2018/07/f1-regular-typeface-font-download-e1572958798608.png) | ![Ejemplo de la fuente Titillium](/readme/titillium.png) |
 
 ### Tamaños y usos
 
-| F1 Turbo | F1 Torque | F1 Regular |
-| -------- | --------- | ---------- |
-|          |           |            |
+ | F1 Torque        | F1 Regular      | Titillium Web |
+ | ---------------- | --------------- | ------------- |
+ | Títulos noticias | Nombres pilotos | Cuerpo web    |
+ |                  | Menús           | Botones       |
 
 ## Iconografía
 
@@ -82,7 +83,7 @@ Para que nuestro proyecto se compile, se puede ejecutar `npm run build` y se cre
 
 ![Logo oficial de Formula1](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/640px-F1.svg.png)
 
-Se usará en la parte superior izquierda de la cabecera.
+Se usará en la parte superior izquierda de la cabecera. Pueden emplearse  variaciones en blanco o en negro.
 
 ### Iconos
 
@@ -94,7 +95,23 @@ Estos iconos son de estilo sólido, por lo que contrastan bien en monocolor. Ade
 
 ### Fotografías de los pilotos
 
+| Tamaño orignal | Formato |
+| -------------- | ------- |
+| 130 x 185 px   | `.jpg`  |
+
+Todas las imágenes tendrán el mismo tamaño original y mantendrán esta proporción según las dimensiones del navegador.
+
 ### Recorrido del circuito
+
+| Proporción | Formato         |
+| ---------- | --------------- |
+| 1:1        | `.png` o `.svg` |
+
+Las imágenes de los circuitos se mostrarán en formato cuadrado, con un tamaño relativo según las dimensiones de la pantalla.
+
+Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
+
+### Fondo
 
 ## Elementos interactivos
 
@@ -104,13 +121,19 @@ Estos iconos son de estilo sólido, por lo que contrastan bien en monocolor. Ade
 
 ### Botones
 
+![Ejemplo de botones](/readme/botones.png)
+
+Los botones usarán la fuente `Titillium Regular` y color de fuente blanco.
+
+Los botones principales usarán el color de fondo `F1 Warm Red` y los secundarios `F1 Carbon Black`.
+
 ## Recursos
 
--   [Fuentes](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
--   [Assets varios](https://www.f1assets.com/homepage)
--   [Logo](https://en.m.wikipedia.org/wiki/File:F1.svg)
--   [Colores de equipos](https://www.reddit.com/r/formula1/comments/11a3wnj/f1_2023_hex_codes/)
--   [Guia de uso](https://www.formula1.com/en/toolbar/guidelines.html)
--   [Guia de la marca](https://ajansara.com/wp-content/uploads/F1-Master-Marka-rehberi.pdf)
--   [Color de la marca](https://www.schemecolor.com/formula-one-red-logo-colors.php)
--   [Botones](https://getcssscan.com/css-buttons-examples)
+- [Fuentes](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
+- [Assets varios](https://www.f1assets.com/homepage)
+- [Logo](https://en.m.wikipedia.org/wiki/File:F1.svg)
+- [Colores de equipos](https://www.reddit.com/r/formula1/comments/11a3wnj/f1_2023_hex_codes/)
+- [Guia de uso](https://www.formula1.com/en/toolbar/guidelines.html)
+- [Guia de la marca](https://ajansara.com/wp-content/uploads/F1-Master-Marka-rehberi.pdf)
+- [Color de la marca](https://www.schemecolor.com/formula-one-red-logo-colors.php)
+- [Circuitos](https://www.pngwing.com/en/search?q=f1+race+track)
