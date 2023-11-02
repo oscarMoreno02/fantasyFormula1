@@ -8,7 +8,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/george-russell.jpg",
+        srcFoto: "./assets/img/george-russell.jpg",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/lewis-hamilton.jpg",
+        srcFoto: "./assets/img/lewis-hamilton.jpg",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/pierre-gasly.jpg",
+        srcFoto: "./assets/img/pierre-gasly.jpg",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/esteban-ocon.jpg",
+        srcFoto: "./assets/img/esteban-ocon.jpg",
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/nico-hulkenberg.jpg",
+        srcFoto: "./assets/img/nico-hulkenberg.jpg",
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/kevin-magnussen.jpg",
+        srcFoto: "./assets/img/kevin-magnussen.jpg",
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/lando-norris.jpg",
+        srcFoto: "./assets/img/lando-norris.jpg",
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/oscar-piastri.jpg",
+        srcFoto: "./assets/img/oscar-piastri.jpg",
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/max-verstappen.jpg",
+        srcFoto: "./assets/img/max-verstappen.jpg",
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/sergio-perez.jpg",
+        srcFoto: "./assets/img/sergio-perez.jpg",
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/fernando-alonso.jpg",
+        srcFoto: "./assets/img/fernando-alonso.jpg",
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/lance-stroll.jpg",
+        srcFoto: "./assets/img/lance-stroll.jpg",
     },
     {
         id: 13,
@@ -140,7 +140,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/yuki-tsunoda.jpg",
+        srcFoto: "./assets/img/yuki-tsunoda.jpg",
     },
     {
         id: 14,
@@ -151,7 +151,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/nyck-de-vries.jpg",
+        srcFoto: "./assets/img/nyck-de-vries.jpg",
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/charles-leclerc.jpg",
+        srcFoto: "./assets/img/charles-leclerc.jpg",
     },
     {
         id: 16,
@@ -173,7 +173,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/carlos-sainz.jpg",
+        srcFoto: "./assets/img/carlos-sainz.jpg",
     },
     {
         id: 17,
@@ -184,7 +184,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/valtteri-bottas.jpg",
+        srcFoto: "./assets/img/valtteri-bottas.jpg",
     },
     {
         id: 18,
@@ -195,7 +195,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/guanyu-zhou.jpg",
+        srcFoto: "./assets/img/guanyu-zhou.jpg",
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/alexander-albon.jpg",
+        srcFoto: "./assets/img/alexander-albon.jpg",
     },
     {
         id: 20,
@@ -217,7 +217,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/logan-sargeant.jpg",
+        srcFoto: "./assets/img/logan-sargeant.jpg",
     },
 ];
 
