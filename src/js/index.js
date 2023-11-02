@@ -31,12 +31,14 @@ botonLogin.addEventListener('click',function(){
 let e=  document.getElementById("email").value
 let p= document.getElementById("password").value
 let msg={}
-msg=validarInicio(e,p)
+console.log(msg=validarInicio(e,p))
 
 if(msg['valido']){
     let u=JSON.stringify(msg['user'])
+ 
     localStorage.setItem('usuario',u)
-    window.location.href='inicio.html'
+    window.location.href='home.html'
+    
 
 }else{
     console.log(msg)
@@ -82,12 +84,12 @@ function comprobarRegistro(e,p){
         console.log(u)
     if( u && u.password && u.email){
         if(e==u.email && p==u.password){   
-            msg['user']=new Usuario(u.nombre,u.apellido,u.email,u.nick,u.password)
+            msg['user']=new Usuario(u.nombre,u.apellidos,u.email,u.nick,u.password)
         correcto=true}
         
     }
     i++
-}   console.log('hola')
+}  
     msg['valido']=correcto
     return msg
 }

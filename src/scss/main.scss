@@ -1,0 +1,18 @@
+@use "normalize";
+@use "skeleton";
+@use "constantes";
+
+@use "administracion";
+@use "clasificacion";
+@use "home";
+@use "index";
+@use "perfil";
+@use "pilotos";
+@use "registro";
+@use "tus-pilotos";
+
+.formulario {
+    width: 350px;
+    display: grid;
+    grid-template-columns: auto auto;
+}

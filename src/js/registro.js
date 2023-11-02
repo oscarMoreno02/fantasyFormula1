@@ -87,13 +87,14 @@ if(!validarPassword(psw)['valido'] ||
 if(validaciones.includes(false)){
     console.log(mensaje)
 }else{
-    
-     if(comprobarRegistrados(email)){
+    let aux=comprobarRegistrados(email,nick)
+     if(aux['valido']){
         let user= new Usuario(nombre,apellidos,email,nick,psw)
+        console.log(user)
         establecerUsuario(user)
         window.location.href='index.html'
      }else{
-        console.log('email registrado')
+        console.log(aux['mensaje'])
     }
    
 }
@@ -144,11 +145,18 @@ function validarMismaPassword(p1,p2){
    
     return m
 }
-function comprobarRegistrados(e){
-    let c=true
+function comprobarRegistrados(e,n){
+    let c={}
+    c['valido']=true
+    c['mensaje']=''
     for(const i of credenciales.usuarios){
         if(i.email==e){
-            c=false
+            c['valido']=false
+            c['mensaje']=c['mensaje']+' Direccion de email en uso \n'
+        }
+        if(i.nick==n){
+            c['valido']=false
+            c['mensaje']=c['mensaje']+' Nick de usuario en uso \n'
         }
     }
     return c
