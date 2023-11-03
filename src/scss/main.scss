@@ -1,15 +1,15 @@
-@use "normalize";
-@use "skeleton";
-@use "constantes";
+@import "normalize";
+@import "skeleton";
+@import "constantes";
 
-@use "administracion";
-@use "clasificacion";
-@use "home";
-@use "index";
-@use "perfil";
-@use "pilotos";
-@use "registro";
-@use "tus-pilotos";
+@import "administracion";
+@import "clasificacion";
+@import "home";
+@import "index";
+@import "perfil";
+@import "pilotos";
+@import "registro";
+@import "tus-pilotos";
 
 .formulario {
     width: 350px;

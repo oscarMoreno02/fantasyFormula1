@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="./scss/_normalize.scss">
+    <link rel="stylesheet" href="./scss/_skeleton.scss">
     <link rel="stylesheet" href="./scss/main.scss">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-
     <title>Registro</title>
 </head>
 <header style=" width: 100%; height: 10vh; background-color: red;" id="menu">
@@ -20,7 +19,7 @@
    
 <div style=" height:90vh; display: flex; justify-content: center;" >
 
-    <div class="formulario" style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 60vh;border-radius: 30px;padding:40px 70px 0px 70px ; ">
+    <div class="formulario" style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 70vh;border-radius: 30px;padding:40px 70px 0px 70px ; ">
         <div class="container " style="">
             <div class="row" style=" width: 625px; height:70px;">
                 <div class="one column" style=" width:300px; height: 70px;">
@@ -29,16 +28,16 @@
                 </div>
                 <div class="one column" style=" width:300px; height: 70px;">
                     <label for="nombre">Apellidos:</label>
-                    <input type="text" id="nombre" name="apellidos">
+                    <input type="text" id="apellidos" name="apellidos">
                 </div>
 
             </div>
             <div class="row" style=" width: 625px; height:30px;">
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaNombre">hola</p>
+                    <p id="alertaNombre"></p>
                 </div>
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaApellidos">hola</p>
+                    <p id="alertaApellidos"></p>
                 </div>
               
             </div>
@@ -54,10 +53,10 @@
             </div>
      <div class="row" style=" width: 625px; height:30px;">
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaEmail">hola</p>
+                    <p id="alertaEmail"></p>
                 </div>
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaNick">hola</p>
+                    <p id="alertaNick"></p>
                 </div>
               
             </div>
@@ -73,10 +72,10 @@
             </div>
             <div class="row" style=" width: 625px; height:30px;">
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaPassword">hola</p>
+                    <p id="alertaPassword"></p>
                 </div>
                 <div class="one column" style=" width:300px; height: 10px;">
-                    <p id="alertaPassword2">hola</p>
+                    <p id="alertaPassword2"></p>
                 </div>
             </div>
             <div class="row">
@@ -86,7 +85,7 @@
         
                 </div>
                 <div class="one column" style="width: 400px; border:1px;padding: 0px;" >
-                    <p id="alertaRegistro">Registrarse </p>
+                    <p id="alertaRegistro"> </p>
                 </div>
             </div>
 
