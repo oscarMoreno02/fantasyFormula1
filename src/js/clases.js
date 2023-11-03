@@ -14,7 +14,7 @@ export class Usuario {
 
     asignarPilotos() {
         let i = 0;
-        let pilotos = [];
+        let competidores = [];
 
         do {
             let idPilotoAleatoria =
@@ -29,7 +29,7 @@ export class Usuario {
             }
         } while (i < 0);
 
-        return pilotos;
+        return competidores;
     }
 
     calcularPuntuacion() {

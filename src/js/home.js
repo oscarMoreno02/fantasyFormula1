@@ -1,7 +1,9 @@
 import { crearMenu } from "./menu.js";
 import { grandesPremios } from "./objetos.js";
+import { Usuario } from "./clases.js";
 
 crearMenu();
+crearJugadores();
 
 var nombreCarrera = document.getElementById("nombre-carrera");
 var ubicacionCarrera = document.getElementById("ubicacion-carrera");
@@ -24,8 +26,26 @@ function cargarNoticias() {
     nombreCarrera.innerText = primerNoDisputado.nombre;
     ubicacionCarrera.innerText = primerNoDisputado.ubicacion;
     descripcionCarrera.innerText = primerNoDisputado.descripcion;
+    fotoCarrera.setAttribute("src", primerNoDisputado.srcFoto);
 }
 
 function noDisputado(granPremio) {
     return granPremio.disputado === false;
+}
+
+function crearBot($numero) {
+    return new Usuario("", "", "", "bot" + $numero, "");
+}
+
+function crearJugadores() {
+    if (!localStorage.getItem("jugadores")) {
+        let $jugador1 = localStorage.getItem("usuario");
+        let $bot1 = crearBot(1);
+        let $bot2 = crearBot(2);
+
+        localStorage.setItem(
+            "jugadores",
+            JSON.stringify([$jugador1, $bot1, $bot2])
+        );
+    }
 }
