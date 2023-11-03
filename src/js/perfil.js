@@ -14,6 +14,15 @@ const inputPassword = document.getElementById("password");
 
 const inputNick = document.getElementById("nick");
 
+const alertaNombre=document.getElementById("alertaNombre")
+const alertaApellidos=document.getElementById("alertaApellidos")
+const alertaNick=document.getElementById("alertaNick")
+const alertaEmail=document.getElementById("alertaEmail")
+const alertaPassword=document.getElementById("alertaPassword")
+const alertaPassword2=document.getElementById("alertaPassword2")
+const alertaCambioDatos=document.getElementById("alertaCambioDatos")
+const alertaCambioPassword=document.getElementById("alertaCambioPassword")
+
 const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exReNoAp = /^.{2,20}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
