@@ -11,8 +11,28 @@
 @import "registro";
 @import "tus-pilotos";
 
+body {
+    font-family: $font-body;
+    background-color: $color-off-white;
+}
+
 .formulario {
     width: 350px;
     display: grid;
     grid-template-columns: auto auto;
+}
+
+header#menu {
+    background-color: $color-red;
+    color: $color-white;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+    }
 }
