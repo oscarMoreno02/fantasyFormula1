@@ -1,4 +1,4 @@
-function mostrarPilotos(div, competidores) {
+export function mostrarPilotos(div, competidores) {
     for (let piloto of competidores) {
         let tarjeta = document.createElement("div");
         div.setAttribute("class", "tarjeta");
