@@ -5,13 +5,15 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "parcel src/*.html",
-        "build": "parcel build src/*.html"
+        "build": "parcel build src/*.html --no-source-maps && copyfiles -u 1 src/assets/**/*.* dist"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "parcel-bundler": "^1.12.5",
+        "@parcel/transformer-sass": "^2.10.2",
+        "copyfiles": "^2.4.1",
+        "parcel": "^2.10.2",
         "sass": "^1.69.3"
     }
 }

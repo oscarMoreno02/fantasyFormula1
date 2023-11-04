@@ -178,7 +178,7 @@ function validarPassword(password) {
         mensaje["valido"] = false;
     } else {
         if (password.length > 12) {
-            mensaje = "Tamaño incorrecto (máximo 12 caracteres)";
+            mensaje["mensaje"] = "Tamaño incorrecto (máximo 12 caracteres)";
             mensaje["valido"] = false;
         } else {
             if (!exRePassword.test(password)) {

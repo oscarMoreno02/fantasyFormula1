@@ -8,7 +8,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/george-russell.jpg",
+        srcFoto: "./assets/img/pilotos/george-russell.jpg",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/lewis-hamilton.jpg",
+        srcFoto: "./assets/img/pilotos/lewis-hamilton.jpg",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pierre-gasly.jpg",
+        srcFoto: "./assets/img/pilotos/pierre-gasly.jpg",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/esteban-ocon.jpg",
+        srcFoto: "./assets/img/pilotos/esteban-ocon.jpg",
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/nico-hulkenberg.jpg",
+        srcFoto: "./assets/img/pilotos/nico-hulkenberg.jpg",
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/kevin-magnussen.jpg",
+        srcFoto: "./assets/img/pilotos/kevin-magnussen.jpg",
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/lando-norris.jpg",
+        srcFoto: "./assets/img/pilotos/lando-norris.jpg",
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/oscar-piastri.jpg",
+        srcFoto: "./assets/img/pilotos/oscar-piastri.jpg",
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/max-verstappen.jpg",
+        srcFoto: "./assets/img/pilotos/max-verstappen.jpg",
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/sergio-perez.jpg",
+        srcFoto: "./assets/img/pilotos/sergio-perez.jpg",
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/fernando-alonso.jpg",
+        srcFoto: "./assets/img/pilotos/fernando-alonso.jpg",
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/lance-stroll.jpg",
+        srcFoto: "./assets/img/pilotos/lance-stroll.jpg",
     },
     {
         id: 13,
@@ -140,7 +140,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/yuki-tsunoda.jpg",
+        srcFoto: "./assets/img/pilotos/yuki-tsunoda.jpg",
     },
     {
         id: 14,
@@ -151,7 +151,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/nyck-de-vries.jpg",
+        srcFoto: "./assets/img/pilotos/nyck-de-vries.jpg",
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/charles-leclerc.jpg",
+        srcFoto: "./assets/img/pilotos/charles-leclerc.jpg",
     },
     {
         id: 16,
@@ -173,7 +173,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/carlos-sainz.jpg",
+        srcFoto: "./assets/img/pilotos/carlos-sainz.jpg",
     },
     {
         id: 17,
@@ -184,7 +184,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/valtteri-bottas.jpg",
+        srcFoto: "./assets/img/pilotos/valtteri-bottas.jpg",
     },
     {
         id: 18,
@@ -195,7 +195,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/guanyu-zhou.jpg",
+        srcFoto: "./assets/img/pilotos/guanyu-zhou.jpg",
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/alexander-albon.jpg",
+        srcFoto: "./assets/img/pilotos/alexander-albon.jpg",
     },
     {
         id: 20,
@@ -217,7 +217,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/logan-sargeant.jpg",
+        srcFoto: "./assets/img/pilotos/logan-sargeant.jpg",
     },
 ];
 
@@ -235,6 +235,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/bahrein.png",
     },
     {
         id: 2,
@@ -247,6 +248,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 3,
@@ -259,6 +261,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 4,
@@ -271,6 +274,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/baku.png",
     },
     {
         id: 5,
@@ -283,6 +287,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 6,
@@ -295,6 +300,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/emilia-romana.png",
     },
     {
         id: 7,
@@ -307,6 +313,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/monaco.png",
     },
     {
         id: 8,
@@ -319,6 +326,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/barcelona.png",
     },
     {
         id: 9,
@@ -331,6 +339,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 10,
@@ -343,10 +352,11 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/austria.png",
     },
     {
         id: 11,
-        nombre: "Gran Premio de Gran Bretaña",
+        nringausombre: "Gran Premio de Gran Bretaña",
         ubicacion: "Silverstone (Reino Unido)",
         descripcion:
             "La longitud del circuito es de 5,891 kilómetros. Durante la carrera se dan 52 vueltas al circuito cubriendo una distancia final de 306,332 kilómetros.",
@@ -355,6 +365,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/silverstone.png",
     },
     {
         id: 12,
@@ -367,6 +378,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/hungaroring.png",
     },
     {
         id: 13,
@@ -379,6 +391,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/spa.png",
     },
     {
         id: 14,
@@ -391,6 +404,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 15,
@@ -403,6 +417,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/monza.png",
     },
     {
         id: 16,
@@ -415,6 +430,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/singapur.png",
     },
     {
         id: 17,
@@ -427,6 +443,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/suzuka.png",
     },
     {
         id: 18,
@@ -439,6 +456,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/bahrein.png",
     },
     {
         id: 19,
@@ -451,6 +469,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/austin.png",
     },
     {
         id: 20,
@@ -463,6 +482,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "./assets/img/circuitos/mexico.png",
     },
     {
         id: 21,
@@ -475,6 +495,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 22,
@@ -487,6 +508,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
     {
         id: 23,
@@ -499,6 +521,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
+        srcFoto: "",
     },
 ];
 
