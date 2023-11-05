@@ -16,6 +16,10 @@ body {
     background-color: $color-off-white;
 }
 
+img {
+    min-width: 100%;
+}
+
 .formulario {
     width: 350px;
     display: grid;
@@ -34,5 +38,12 @@ header#menu {
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
+    }
+}
+
+button {
+    .primario {
+        background-color: $color-red; 
+        color: $color-white;
     }
 }
