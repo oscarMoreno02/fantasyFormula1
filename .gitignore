@@ -4,4 +4,4 @@ node_modules
 dist
 .vscode/*
 .parcel-cache
-package-log.json
+package-lock.json
