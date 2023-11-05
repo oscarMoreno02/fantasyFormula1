@@ -1,7 +1,9 @@
-@import "normalize";
-@import "skeleton";
 @import "constantes";
 
+@import "normalize";
+@import "skeleton";
+
+@import "botones";
 @import "administracion";
 @import "clasificacion";
 @import "home";
@@ -17,6 +19,13 @@ body {
     background-color: $color-off-white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
 img {
     min-width: 100%;
 }
@@ -25,11 +34,4 @@ img {
     width: 350px;
     display: grid;
     grid-template-columns: auto auto;
-}
-
-button {
-    .primario {
-        background-color: $color-red;
-        color: $color-white;
-    }
 }

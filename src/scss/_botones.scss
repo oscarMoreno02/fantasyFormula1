@@ -1,0 +1,9 @@
+button {
+    font-family: $font-body;
+    margin: 0.5rem;
+
+    a .button-primary.button {
+        background-color: $color-red;
+        color: $color-white;
+    }
+}
