@@ -14,9 +14,16 @@
 @import "tus-pilotos";
 @import "menu";
 
+html {
+    background-color: $color-off-white;
+    background-image: url(../assets/img/fondo.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 body {
     font-family: $font-body;
-    background-color: $color-off-white;
 }
 
 main {
@@ -28,6 +35,10 @@ main {
 
 img {
     min-width: 100%;
+
+    .logo {
+        fill: $color-black;
+    }
 }
 
 .formulario {
