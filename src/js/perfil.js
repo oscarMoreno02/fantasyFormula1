@@ -99,6 +99,7 @@ botonCambioDatos.addEventListener('click', function () {
         contadorCambios++
         if (!exReNoAp.test(nombre)) {
             alertaNombre.textContent= "Formato del nombre incorrecto \n";
+            inputNombre.style.border='1px solid red'
             validaciones.push(false);
         }
     } else {
@@ -109,6 +110,7 @@ botonCambioDatos.addEventListener('click', function () {
         contadorCambios++
         if (!exReNoAp.test(apellidos)) {
             alertaApellidos.textContent= "Formato de los apellidos incorrecto \n";
+            inputApellidos.style.border='1px solid red'
             validaciones.push(false);
         }
     } else {
@@ -119,6 +121,7 @@ botonCambioDatos.addEventListener('click', function () {
         contadorCambios++
         if (!exReEmail.test(email)) {
             alertaEmail.textContent= "Formato de email incorrecto \n";
+            inputEmail.style.border='1px solid red'
             validaciones.push(false);
         } else {
             if (email == usuario.email) {
@@ -141,6 +144,7 @@ botonCambioDatos.addEventListener('click', function () {
             let newUser = new Usuario(nombre, apellidos, email, usuario.nick, usuario.psw)
             cambiarDatosUsuario(newUser)
         }else{
+            restablecerInputYAlertas()
             alertaCambioDatos.textContent='No se han realizado cambios'
         }
     }
@@ -163,11 +167,13 @@ function cambiarPassword() {
             !validarMismaPassword(psw, psw2)['valido']) {
             alertaPassword.textContent= 'Contraseña mal introducida \n'
             alertaPassword2.textContent=""
+            inputPassword.style.border='1px solid red'
+            inputNuevaPassword.style.border='1px solid red'
             validaciones.push(false)
 
         } else {
             if (psw == usuario.password) {
-                alertaCambioPassword.textContent= 'La contraseña no puede ser la misma \n'
+                alertaPassword.textContent= 'La contraseña no puede ser la misma \n'
                 alertaPassword2.textContent="" 
                 validaciones.push(false)
             }
@@ -178,6 +184,11 @@ function cambiarPassword() {
             let newUser = new Usuario(usuario.nombre, usuario.apellidos, usuario.email, usuario.nick, psw)
             cambiarDatosUsuario(newUser)
         }
+    }else{
+        alertaCambioPassword.textContent='No se han realizado cambios'
+        alertaCambioDatos.textContent=''
+        restablecerInputYAlertas()
+       
     }
 
 }
@@ -254,5 +265,26 @@ function refrescar(){
     inputPassword.value=''
     inputNuevaPassword.value=''
     window.location.reload()
+}
+
+function restablecerInputYAlertas(){
+
+    inputApellidos.style.border=''
+    inputNombre.style.border=''
+    inputEmail.style.border=''
+    inputPassword.style.border=''
+    inputNuevaPassword.style.border=''
+
+    inputApellidos.value=''
+    inputNombre.style.value=''
+    inputEmail.style.value=''
+    inputPassword.style.value=''
+    inputNuevaPassword.style.value=''
+
+    alertaNombre.textContent=''
+    alertaApellidos.textContent=''
+    alertaEmail.textContent=''
+    alertaPassword.textContent=''
+    alertaPassword2.textContent=''
 }
 
