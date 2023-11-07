@@ -4,7 +4,7 @@ export function mostrarPilotos(div, competidores) {
         tarjeta.setAttribute("class", "tarjeta");
 
         let nombre = document.createElement("h4");
-        nombre.textContent = piloto.nombre + " " + piloto.apellido;
+        nombre.innerHTML = piloto.nombre + "<br>" + piloto.apellido;
         tarjeta.appendChild(nombre);
 
         let img = document.createElement("img");

@@ -1,6 +1,6 @@
-import { Usuario } from "./clases";
-import { pilotos } from "./objetos";
-import { crearMenu } from "./menu";
+import { Usuario } from "./clases.js";
+import { pilotos } from "./objetos.js";
+import { crearMenu } from "./menu.js";
 import { mostrarPilotos } from "./comunes.js";
 
 let divTusPilotos = document.getElementById("tus-pilotos");
@@ -10,17 +10,34 @@ let btnAsignarTitular = document.getElementById("btn-asignar-titular");
 crearMenu();
 crearPilotos();
 
+btnAsignarTitular.addEventListener("click", function () {
+    cambiarTitular();
+});
+
 function crearPilotos() {
-    let credenciales = JSON.parse(localStorage.getItem("credenciales"));
-    let tusPilotos = credenciales.usuarios[1].pilotos;
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let tusPilotos = usuario.pilotos;
     console.log(tusPilotos);
 
     mostrarPilotos(divTusPilotos, tusPilotos);
 
-    for (let piloto in tusPilotos) {
+    for (let i = 0; i < tusPilotos.length; i++) {
         let option = document.createElement("option");
-        option.value = piloto.nombre;
-        
+        option.innerText = tusPilotos[i].nombre;
+        option.value = i;
+
         selectPilotos.appendChild(option);
+    }
+}
+
+function cambiarTitular() {
+    let seleccionado = selectPilotos.value;
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let tusPilotos = usuario.pilotos;
+
+    if (tusPilotos[seleccionado] != tusPilotos[0]) {
+        let nuevoTitular = tusPilotos[seleccionado];
+        tusPilotos[1] = tusPilotos[0];
+        tusPilotos[0] = nuevoTitular;
     }
 }
