@@ -8,7 +8,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "/home/daw201/Escritorio/formula1/fantasyFormula1/src/assets/img/pilotos/george-russell.jpg",
+        srcFoto: "./assets/img/pilotos/george-russell.jpg",
     },
     
     {
@@ -207,7 +207,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/alexander-albon.jpeg",
+        srcFoto: "./assets/img/pilotos/alexander-albon.jpg",
     },
     {
         id: 20,
