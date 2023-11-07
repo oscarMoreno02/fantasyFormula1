@@ -27,6 +27,9 @@ function cargarNoticias() {
     ubicacionCarrera.innerText = primerNoDisputado.ubicacion;
     descripcionCarrera.innerText = primerNoDisputado.descripcion;
     fotoCarrera.setAttribute("src", primerNoDisputado.srcFoto);
+    if (primerNoDisputado.fotoCarrera) {
+        fotoCarrera.setAttribute("src", "srcFoto");
+    }
 }
 
 function noDisputado(granPremio) {

@@ -3,27 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="./scss/_normalize.scss">
+    <link rel="stylesheet" href="./scss/_skeleton.scss">
     <link rel="stylesheet" href="./scss/main.scss">
     <title>Registro</title>
 </head>
+<header style=" width: 100%; height: 10vh; background-color: red;" id="menu">
+    <div style=" width: 70px; height:70px" class="container">
+        <img alt="logo" class="logo" src="./assets/img/logo.svg">
+    </div>
+</header>
 
-<body>
-    <header id="menu">
+<body style="background-image:url(./assets/img/posible_fondo1.jpg);background-size:cover;background-position: center;background-repeat: no-repeat;">
+   
+<div style=" height:90vh; display: flex; justify-content: center;" >
 
-    </header>
-    <div class="formulario">
-        <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre">
-        <label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos">
-        <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
-        <label for="nick">Nick:</label><input type="text" id="nick" name="nick">
-        <label for="password1">Contraseña:</label><input type="password" id="password1" name="password1">
-        <label for="password2">Repite tu contraseña:</label><input type="password" id="password2" name="password2">
+    <div class="formulario" style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 83vh;border-radius: 30px;padding:0px 70px 0px 70px ; ">
+        <div class="container " style="">
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
+                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h1>Fantasy F1</h1></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
+                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h5>Registro</h5></div>
+                </div>
+                
+            </div>
+            <div class="row" style=" width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nombre">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+
+            </div>
+            <div class="row" style=" width: 625px; height:30px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaNombre"></p>
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaApellidos"></p>
+                </div>
+              
+            </div>
+
+            <div class="row" style=" width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nick">Nick:</label><input type="text" id="nick" name="nick">
+                </div>
+
+            </div>
+     <div class="row" style=" width: 625px; height:30px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaEmail"></p>
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaNick"></p>
+                </div>
+              
+            </div>
+
+            <div class="row" style="width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="password1">Contraseña:</label><input type="password" id="password1" name="password1">
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="password2">Repite tu contraseña </label><input type="password" id="password2"
+                        name="password2">
+                </div>
+            </div>
+            <div class="row" style=" width: 625px; height:30px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaPassword"></p>
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaPassword2"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px" >
+                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><button id="btn-registro">Registrarse</button></div>
+                
+        
+                </div>
+                <div class="one column" style="width: 400px; border:1px;padding: 0px;" >
+                    <p id="alertaRegistro"> </p>
+                </div>
+            </div>
+
+        </div>
+      
     </div>
 
-    <button id="btn-registro">Registrarse</button>
+
+
+
+
+
+</div>
+       
+
+
+   
 
     <script type="module" src="./js/registro.js"></script>
 </body>
-
+<footer style=" width: 100%; height:60px; background-color: red; margin-top: 100px;"></footer>
 </html>

@@ -8,6 +8,14 @@ const inputPassword2 = document.getElementById("password2");
 const botonRegistro = document.getElementById("btn-registro");
 const inputNick = document.getElementById("nick");
 
+const alertaNombre = document.getElementById("alertaNombre");
+const alertaApellidos = document.getElementById("alertaApellidos");
+const alertaNick = document.getElementById("alertaNick");
+const alertaEmail = document.getElementById("alertaEmail");
+const alertaPassword = document.getElementById("alertaPassword");
+const alertaPassword2 = document.getElementById("alertaPassword2");
+const alertaRegistro = document.getElementById("alertaRegistro");
+
 const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
 const exReNoAp = /^.{2,20}$/;
 const exReNick = /^\w{4,10}$/;
@@ -36,16 +44,17 @@ console.log(credenciales);
 inputPassword1.addEventListener("input", function () {
     let psw = inputPassword1.value;
     let msg = validarPassword(psw);
-    console.log(msg);
+    alertaPassword.textContent = msg["mensaje"];
 });
 inputPassword2.addEventListener("input", function () {
     let psw = inputPassword1.value;
     let psw2 = inputPassword2.value;
     let msg = validarPassword(psw2);
-    console.log(msg);
+    alertaPassword2.textContent = msg["mensaje"];
+
     if (msg["valido"]) {
         msg = validarMismaPassword(psw, psw2);
-        console.log(msg);
+        alertaPassword2.textContent = msg["mensaje"];
     }
 });
 
@@ -61,27 +70,36 @@ botonRegistro.addEventListener("click", function () {
     let psw2 = document.getElementById("password2").value;
 
     if (!exReNoAp.test(nombre)) {
-        mensaje = mensaje + "Formato del nombre incorrecto \n";
+        alertaNombre.textContent = "Formato del nombre incorrecto \n";
         validaciones.push(false);
+    } else {
+        alertaNombre.textContent = "";
     }
     if (!exReNoAp.test(apellidos)) {
-        mensaje = mensaje + "Formato de los apellidos incorrecto \n";
+        alertaApellidos.textContent = "Formato de los apellidos incorrecto \n";
         validaciones.push(false);
+    } else {
+        alertaApellidos.textContent = "";
     }
     if (!exReNick.test(nick)) {
-        mensaje = mensaje + "Formato del nick incorrecto \n";
+        alertaNick.textContent = "Formato del nick incorrecto \n";
         validaciones.push(false);
+    } else {
+        alertaNick.textContent = "";
     }
     if (!exReEmail.test(email)) {
-        mensaje = mensaje + "Formato de email incorrecto \n";
+        alertaEmail.textContent = "Formato de email incorrecto \n";
         validaciones.push(false);
+    } else {
+        alertaEmail.textContent = "";
     }
     if (
         !validarPassword(psw)["valido"] ||
         !validarPassword(psw2)["valido"] ||
         !validarMismaPassword(psw, psw2)["valido"]
     ) {
-        mensaje = mensaje + "Contraseña mal introducida \n";
+        alertaPassword2.textContent = "";
+        alertaPassword.textContent = "Contraseña mal introducida \n";
         validaciones.push(false);
     }
 
@@ -92,18 +110,17 @@ botonRegistro.addEventListener("click", function () {
         if (aux["valido"]) {
             let user = new Usuario(nombre, apellidos, email, nick, psw);
             console.log(user);
-            establecerUsuario(user);
+            guardarUsuarioCredenciales(user);
             window.location.href = "index.html";
         } else {
-            console.log(aux["mensaje"]);
+            alertaRegistro.textContent = aux["mensaje"];
         }
     }
 });
 
-function establecerUsuario(usuario) {
+function guardarUsuarioCredenciales(usuario) {
     credenciales.usuarios.push(usuario);
-    let c = JSON.stringify(credenciales);
-    localStorage.setItem("credenciales", c);
+    localStorage.setItem("credenciales", JSON.stringify(credenciales));
 }
 
 function validarPassword(password) {
@@ -114,7 +131,7 @@ function validarPassword(password) {
         mensaje["valido"] = false;
     } else {
         if (password.length > 12) {
-            mensaje = "Tamaño incorrecto (máximo 12 caracteres)";
+            mensaje["mensaje"] = "Tamaño incorrecto (máximo 12 caracteres)";
             mensaje["valido"] = false;
         } else {
             if (!exRePassword.test(password)) {
@@ -130,31 +147,33 @@ function validarPassword(password) {
     return mensaje;
 }
 
-function validarMismaPassword(p1, p2) {
-    let m = {};
-    if (p1 == p2) {
-        m["valido"] = true;
-        m["mensaje"] = "Ambas contraseñas coinciden";
+function validarMismaPassword(password1, password2) {
+    let auxiliar = {};
+    if (password1 == password2) {
+        auxiliar["valido"] = true;
+        auxiliar["mensaje"] = "Ambas contraseñas coinciden";
     } else {
-        m["valido"] = false;
-        m["mensaje"] = "Las contraseñas no coinciden";
+        auxiliar["valido"] = false;
+        auxiliar["mensaje"] = "Las contraseñas no coinciden";
     }
 
-    return m;
+    return auxiliar;
 }
-function comprobarRegistrados(e, n) {
-    let c = {};
-    c["valido"] = true;
-    c["mensaje"] = "";
+function comprobarRegistrados(email, nick) {
+    let auxiliar = {};
+    auxiliar["valido"] = true;
+    auxiliar["mensaje"] = "";
     for (const i of credenciales.usuarios) {
-        if (i.email == e) {
-            c["valido"] = false;
-            c["mensaje"] = c["mensaje"] + " Direccion de email en uso \n";
+        if (i.email == email) {
+            auxiliar["valido"] = false;
+            auxiliar["mensaje"] =
+                auxiliar["mensaje"] + " Direccion de email en uso \n";
         }
-        if (i.nick == n) {
-            c["valido"] = false;
-            c["mensaje"] = c["mensaje"] + " Nick de usuario en uso \n";
+        if (i.nick == nick) {
+            auxiliar["valido"] = false;
+            auxiliar["mensaje"] =
+                auxiliar["mensaje"] + " Nick de usuario en uso \n";
         }
     }
-    return c;
+    return auxiliar;
 }
