@@ -1,4 +1,8 @@
 import { Usuario, Credenciales } from "./objetos.js"
+let user=localStorage.getItem('usuario')
+if(user!=null){
+    window.location.href="home.html"
+}
 
 const inputNombre = document.getElementById("nombre");
 const inputApellidos = document.getElementById("apellidos");

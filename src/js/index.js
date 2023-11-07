@@ -1,6 +1,11 @@
 import { Usuario } from "./objetos.js"
 import {Credenciales} from "./objetos.js"
 
+let user=localStorage.getItem('usuario')
+if(user!=null){
+    window.location.href="home.html"
+}
+
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 const botonLogin = document.getElementById("login");
@@ -12,7 +17,6 @@ const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
 
 let datos=localStorage.getItem('credenciales')
-
 let credenciales=new Credenciales()
 if(datos!=null){
     let c=JSON.parse(datos)
@@ -33,12 +37,12 @@ botonLogin.addEventListener('click',function(){
 let e=  document.getElementById("email").value
 let p= document.getElementById("password").value
 let msg={}
-console.log(msg=validarInicio(e,p))
+msg=validarInicio(e,p)
 
 if(msg['valido']){
-    let u=JSON.stringify(msg['user'])
+   
  
-    localStorage.setItem('usuario',u)
+    localStorage.setItem('usuario',JSON.stringify(msg['user']))
     window.location.href='home.html'
     
 
