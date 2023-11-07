@@ -2,10 +2,11 @@ import { Usuario } from "./objetos.js";
 import { Credenciales } from "./objetos.js";
 import { crearMenu } from "./menu.js";
 
+crearMenu();
+
 const inputNuevaPassword = document.getElementById("nueva-password");
 const botonCambioPass = document.getElementById("btn-cambiar-password");
-const botonCambioDatos = document.getElementById("btn-guardar-cambios")
-
+const botonCambioDatos = document.getElementById("btn-guardar-cambios");
 
 const inputNombre = document.getElementById("nombre");
 const inputApellidos = document.getElementById("apellidos");
@@ -13,6 +14,7 @@ const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 
 const inputNick = document.getElementById("nick");
+
 
 const alertaNombre=document.getElementById("alertaNombre")
 const alertaApellidos=document.getElementById("alertaApellidos")
@@ -28,7 +30,7 @@ const exReNoAp = /^.{2,20}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
 
 
-let datos = localStorage.getItem('credenciales')
+let datos = localStorage.getItem("credenciales");
 
 let credenciales = new Credenciales();
 if (datos != null) {
@@ -47,26 +49,24 @@ if (datos != null) {
     credenciales.usuarios = lista;
 }
 
+let usuario = credenciales.usuarios[0];
 
-let usuario = credenciales.usuarios[0]
-
- datos = localStorage.getItem('usuario')
+datos = localStorage.getItem("usuario");
 
 if (datos != null) {
-    let u = JSON.parse(datos)
-    console.log(u)
-    usuario = new Usuario(u.nombre,u.apellidos, u.email, u.nick, u.password)
+    let u = JSON.parse(datos);
+    console.log(u);
+    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
 }
-console.log(usuario)
+console.log(usuario);
 
-inputNombre.setAttribute('placeholder', usuario.nombre)
-console.log(usuario.apellidos)
-inputApellidos.setAttribute('placeholder', usuario.apellidos)
-inputNick.setAttribute('placeholder', usuario.nick)
-inputEmail.setAttribute('placeholder', usuario.email)
-inputPassword.setAttribute('placeholder', 'Nueva contraseña')
-inputNuevaPassword.setAttribute('placeholder', 'Confirme la nueva contraseña')
-
+inputNombre.setAttribute("placeholder", usuario.nombre);
+console.log(usuario.apellidos);
+inputApellidos.setAttribute("placeholder", usuario.apellidos);
+inputNick.setAttribute("placeholder", usuario.nick);
+inputEmail.setAttribute("placeholder", usuario.email);
+inputPassword.setAttribute("placeholder", "Nueva contraseña");
+inputNuevaPassword.setAttribute("placeholder", "Confirme la nueva contraseña");
 
 inputPassword.addEventListener("input", function () {
     let psw = inputPassword.value;
@@ -86,6 +86,7 @@ inputNuevaPassword.addEventListener("input", function () {
     }
 });
 
+
 botonCambioDatos.addEventListener('click', function () {
   
     let contadorCambios = 0
@@ -95,8 +96,9 @@ botonCambioDatos.addEventListener('click', function () {
 
     let validaciones = [true]
    
+
     if (nombre) {
-        contadorCambios++
+        contadorCambios++;
         if (!exReNoAp.test(nombre)) {
             alertaNombre.textContent= "Formato del nombre incorrecto \n";
             inputNombre.style.border='1px solid red'
@@ -107,7 +109,7 @@ botonCambioDatos.addEventListener('click', function () {
     }
 
     if (apellidos) {
-        contadorCambios++
+        contadorCambios++;
         if (!exReNoAp.test(apellidos)) {
             alertaApellidos.textContent= "Formato de los apellidos incorrecto \n";
             inputApellidos.style.border='1px solid red'
@@ -118,7 +120,7 @@ botonCambioDatos.addEventListener('click', function () {
     }
 
     if (email) {
-        contadorCambios++
+        contadorCambios++;
         if (!exReEmail.test(email)) {
             alertaEmail.textContent= "Formato de email incorrecto \n";
             inputEmail.style.border='1px solid red'
@@ -129,8 +131,10 @@ botonCambioDatos.addEventListener('click', function () {
                 validaciones.push(false);
             } else {
                 if (!comprobarRegistrados(email)) {
+
                     validaciones.push(false)
                     alertaEmail.textContent= 'Email en uso \n'
+
                 }
             }
         }
@@ -138,6 +142,7 @@ botonCambioDatos.addEventListener('click', function () {
         email = document.getElementById("email").placeholder;
     }
     if (validaciones.includes(false)) {
+
         
     } else {
         if (contadorCambios > 0) {
@@ -146,22 +151,23 @@ botonCambioDatos.addEventListener('click', function () {
         }else{
             restablecerInputYAlertas()
             alertaCambioDatos.textContent='No se han realizado cambios'
+
         }
     }
-})
-botonCambioPass.addEventListener('click',function(){
-    
-    cambiarPassword()
-})
+});
+botonCambioPass.addEventListener("click", function () {
+    cambiarPassword();
+});
 
 function cambiarPassword() {
-    let psw = document.getElementById("password").value
-    let psw2 = document.getElementById("nueva-password").value
+    let psw = document.getElementById("password").value;
+    let psw2 = document.getElementById("nueva-password").value;
 
-    let validaciones = [true]
-    let mensaje = ''
+    let validaciones = [true];
+    let mensaje = "";
 
     if (psw || psw2) {
+
         if (!validarPassword(psw)['valido'] ||
             !validarPassword(psw2)['valido'] ||
             !validarMismaPassword(psw, psw2)['valido']) {
@@ -190,7 +196,6 @@ function cambiarPassword() {
         restablecerInputYAlertas()
        
     }
-
 }
 
 function validarPassword(password) {
@@ -230,6 +235,7 @@ function validarMismaPassword(p1, p2) {
 
     return m;
 }
+
 function cambiarDatosUsuario(user) {
     let continuar = false;
     let indice = 0;
@@ -240,14 +246,16 @@ function cambiarDatosUsuario(user) {
             localStorage.setItem('credenciales', JSON.stringify(credenciales))
             localStorage.setItem('usuario', JSON.stringify(user))
            continuar = true
+
         }
         indice++;
     }
+
     
    refrescar()
    alert('Datos guardados correctamente')
-}
 
+}
 
 function comprobarRegistrados(e) {
     let c = true;
@@ -258,6 +266,7 @@ function comprobarRegistrados(e) {
     }
     return c;
 }
+
 function refrescar(){
     inputApellidos.value=''
     inputEmail.value=''
@@ -287,4 +296,5 @@ function restablecerInputYAlertas(){
     alertaPassword.textContent=''
     alertaPassword2.textContent=''
 }
+
 

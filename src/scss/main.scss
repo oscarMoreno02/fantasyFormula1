@@ -1,7 +1,9 @@
-@import "normalize";
-@import "skeleton";
 @import "constantes";
 
+@import "normalize";
+@import "skeleton";
+
+@import "botones";
 @import "administracion";
 @import "clasificacion";
 @import "home";
@@ -10,29 +12,37 @@
 @import "pilotos";
 @import "registro";
 @import "tus-pilotos";
+@import "menu";
+
+html {
+    background-color: $color-off-white;
+    background-image: url(../assets/img/fondo.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 body {
     font-family: $font-body;
-    background-color: $color-off-white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+img {
+    min-width: 100%;
+
+    .logo {
+        fill: $color-black;
+    }
 }
 
 .formulario {
     width: 350px;
     display: grid;
     grid-template-columns: auto auto;
-}
-
-header#menu {
-    background-color: $color-red;
-    color: $color-white;
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: $color-white;
-        text-transform: uppercase;
-    }
 }

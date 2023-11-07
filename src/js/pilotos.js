@@ -21,7 +21,7 @@ function crearPilotos() {
         div.setAttribute("class", "tarjeta");
 
         let nombre = document.createElement("h4");
-        nombre.textContent = piloto.nombre + " " + piloto.apellido;
+        nombre.innerHTML = piloto.nombre + "<br>" + piloto.apellido;
         div.appendChild(nombre);
 
         let img = document.createElement("img");
@@ -33,11 +33,11 @@ function crearPilotos() {
         div.appendChild(escuderia);
 
         let puntos = document.createElement("p");
-        puntos.innerHTML = "<b>Puntuación:</b>" + piloto.puntuacion;
+        puntos.innerHTML = "<b>Puntuación: </b>" + piloto.puntuacion;
         div.appendChild(puntos);
 
         let propiedad = document.createElement("p");
-        propiedad.innerHTML = "<b>Rol:</b>" + piloto.rol;
+        propiedad.innerHTML = "<b>Rol: </b>" + piloto.rol;
         div.appendChild(propiedad);
 
         sectionPilotos.appendChild(div);
