@@ -8,23 +8,109 @@
     <title>Perfil</title>
 </head>
 
-<body>
-    <header id="menu">
-        <!-- Incluir el contenido con JS-->
-    </header>
-    <div class="formulario">
-        <label for="nombre">Nick:</label><input type="text" id="nick" name="nick" disabled>
-        <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre">
-        <label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos">
-        <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
-        <label><button id="btn-guardar-cambios">Guardar cambios</button></label>
-        <label for="password">Contraseña:</label><input type="password" id="password" name="password">
-    </div>
 
-    <label for="nueva-password">Nueva Contraseña</label><input type="password" id="nueva-password"><br>
-    <button id="btn-cambiar-password">Cambiar contraseña</button>
+<body style="background-image:url(./assets/img/posible_fondo1.jpg);background-size:cover;background-position: center;background-repeat: no-repeat;">
+    <header style=" width: 100%; height: 10vh; background-color: red;" id="menu">
+        <div style=" width: 70px; height:70px" class="container">
+            <img alt="logo">
+        </div>
+    </header>
+    <div style=" height:90vh; display: flex; justify-content: center;" >
+    <div class="formulario"  style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 90vh;border-radius: 30px;padding:0px 70px 0px 70px ; ">
+        <div class="container">
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
+                    <div style="width: 100%; display: flex; justify-content:center;;"><h1>Editar Perfil</h1></div>
+                </div>
+                
+            </div>
+          
+            <div class="row" style=" width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+
+            </div>
+            <div class="row" style=" width: 625px; height:30px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaNombre"></p>
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaApellidos"></p>
+                </div>
+              
+            </div>
+            <div class="row" style=" width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nick" >Nick:</label>
+                    <input type="text" disabled id="nick" name="nick">
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+
+
+            </div>
+            <div class="row" style=" width: 625px; height:10px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaEmail"></p>
+                </div>
+              
+            </div>
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px" >
+                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 15px;"><button id="btn-guardar-cambios">Guardar cambios</button></div>
+                
+        
+                </div>
+                <div class="one column" style="width: 400px; " >
+                    <p id="alertaCambioDatos" style="height: 15px;"></p>
+                </div>
+            </div>
+            <div class="row" style=" width: 625px; height:70px;">
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="password">Contraseña:</label><input type="password" id="password" name="password">
+           
+                </div>
+                <div class="one column" style=" width:300px; height: 70px;">
+                    <label for="nueva-password">Nueva Contraseña</label><input type="password" id="nueva-password"><br>
+                </div>
+
+            </div>
+            <div class="row" style=" width: 625px; height:30px;">
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaPassword"></p>
+                </div>
+                <div class="one column" style=" width:300px; height: 10px;">
+                    <p id="alertaPassword2"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="one column" style="width: 500px; border:1px" >
+                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><button id="btn-cambiar-password">Cambiar contraseña</button></div>
+                
+        
+                </div>
+                <div class="one column" style="width: 400px; border:1px;padding: 0px;" >
+                    <p id="alertaCambioPassword"></p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    </div>
 
     <script type="module" src="./js/perfil.js"></script>
 </body>
-
+<footer style=" width: 100%; height:60px; background-color: red; margin-top: 100px;"></footer>
 </html>
