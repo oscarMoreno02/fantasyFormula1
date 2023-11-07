@@ -5,6 +5,8 @@ const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 const botonLogin = document.getElementById("login");
 const botonRegistro = document.getElementById("btn-registro");
+const alertaLogin = document.getElementById("alertaLogin");
+
 
 const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
@@ -41,7 +43,7 @@ if(msg['valido']){
     
 
 }else{
-    console.log(msg)
+    alertaLogin.textContent=msg['mensaje']
 }
 
 
@@ -63,7 +65,7 @@ function validarInicio(email,password){
         correcto['valido']=true
         correcto['user']=info['user']
        }else{
-        correcto['mensaje']='Email o contraseña incorrecta'
+        correcto['mensaje']='Comprueba tu contraseña y correo electronico de cuenta e inténtalo de nuevo.'
         correcto['valido']=false
        }
 
