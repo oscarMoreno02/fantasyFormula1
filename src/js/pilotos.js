@@ -1,12 +1,12 @@
 import { pilotos } from "./objetos.js";
 import { crearMenu } from "./menu.js";
 
-crearMenu();
+
 
 let sectionPilotos = document.getElementById("section-pilotos");
 
 crearPilotos();
-
+crearMenu();
 function crearPilotos() {
     let competidores = pilotos;
 
@@ -17,6 +17,7 @@ function crearPilotos() {
     console.log(competidores);
 
     for (let piloto of competidores) {
+        
         let div = document.createElement("div");
         div.setAttribute("class", "tarjeta");
 

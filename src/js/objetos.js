@@ -8,8 +8,9 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/george-russell.jpg",
+        srcFoto: "/home/daw201/Escritorio/formula1/fantasyFormula1/src/assets/img/pilotos/george-russell.jpg",
     },
+    
     {
         id: 2,
         nombre: "Lewis",
@@ -206,7 +207,7 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "./assets/img/pilotos/alexander-albon.jpg",
+        srcFoto: "./assets/img/pilotos/alexander-albon.jpeg",
     },
     {
         id: 20,
@@ -469,7 +470,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "./assets/img/circuitos/austin.png",
+        srcFoto: "../assets/img/circuitos/austin.png",
     },
     {
         id: 20,
