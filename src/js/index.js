@@ -1,13 +1,11 @@
 import { Usuario } from "./objetos.js"
 import {Credenciales} from "./objetos.js"
 
-let user=localStorage.getItem('usuario')
+let user=localStorage.getItem("usuario")
 if(user!=null){
     window.location.href="home.html"
 }
 
-const inputEmail = document.getElementById("email");
-const inputPassword = document.getElementById("password");
 const botonLogin = document.getElementById("login");
 const botonRegistro = document.getElementById("btn-registro");
 const alertaLogin = document.getElementById("alertaLogin");

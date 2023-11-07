@@ -29,8 +29,20 @@ const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
 const exReNoAp = /^.{2,20}$/
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
 
+let usuario = new Usuario();
 
-let datos = localStorage.getItem("credenciales");
+let datos = localStorage.getItem("usuario");
+console.log(datos)
+if (datos != null) {
+    let u = JSON.parse(datos);
+    console.log(u);
+    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
+}else{
+    window.location.href="index.html"
+}
+
+
+ datos = localStorage.getItem("credenciales");
 
 let credenciales = new Credenciales();
 if (datos != null) {
@@ -49,16 +61,6 @@ if (datos != null) {
     credenciales.usuarios = lista;
 }
 
-let usuario = credenciales.usuarios[0];
-
-datos = localStorage.getItem("usuario");
-
-if (datos != null) {
-    let u = JSON.parse(datos);
-    console.log(u);
-    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
-}
-console.log(usuario);
 
 inputNombre.setAttribute("placeholder", usuario.nombre);
 console.log(usuario.apellidos);

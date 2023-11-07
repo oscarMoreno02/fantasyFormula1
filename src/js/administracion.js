@@ -1,6 +1,16 @@
-import { pilotos, puntuaciones, grandesPremios } from "./objetos.js";
+import { pilotos, puntuaciones, grandesPremios, Usuario } from "./objetos.js";
 import { crearMenu } from "./menu.js";
+let usuario = new Usuario();
 
+let datos = localStorage.getItem("usuario");
+console.log(datos)
+if (datos != null) {
+    let u = JSON.parse(datos);
+    console.log(u);
+    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
+}else{
+    window.location.href="index.html"
+}
 crearMenu();
 
 const botonLanzarCarrera = document.getElementById("lanzar-carrera");
