@@ -10,6 +10,7 @@ export var pilotos = [
         rol: "",
         srcFoto: "./assets/img/pilotos/george-russell.jpg",
     },
+    
     {
         id: 2,
         nombre: "Lewis",
@@ -469,7 +470,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "./assets/img/circuitos/austin.png",
+        srcFoto: "../assets/img/circuitos/austin.png",
     },
     {
         id: 20,

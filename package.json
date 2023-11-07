@@ -5,7 +5,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "parcel src/*.*",
-        "build": "parcel build src/*.html --no-source-maps && copyfiles -u 1 src/assets/**/*.* dist"
+        "build": "parcel build src/*.html --no-source-maps && copyfiles -u 1 'src/assets/**/*.*' dist"
+
     },
     "keywords": [],
     "author": "",
