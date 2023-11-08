@@ -114,6 +114,7 @@ botonRegistro.addEventListener("click", function () {
         if (aux["valido"]) {
             let user = new Usuario(nombre, apellidos, email, nick, psw);
             console.log(user);
+            user.asignarPilotos()
             guardarUsuarioCredenciales(user);
             window.location.href = "index.html";
         } else {

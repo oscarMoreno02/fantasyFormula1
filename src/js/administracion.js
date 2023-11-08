@@ -1,4 +1,5 @@
-import { pilotos, puntuaciones, grandesPremios, Usuario } from "./objetos.js";
+import { pilotos, puntuaciones, grandesPremios } from "./objetos.js";
+import { Usuario } from "./clases.js";
 import { crearMenu } from "./menu.js";
 let usuario = new Usuario();
 

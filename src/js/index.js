@@ -43,7 +43,7 @@ if(msg['valido']){
     alertaLogin.textContent=msg['mensaje']
 }
 console.log(credenciales);
-
+})
 botonLogin.addEventListener("click", function () {
     let e = document.getElementById("email").value;
     let p = document.getElementById("password").value;
