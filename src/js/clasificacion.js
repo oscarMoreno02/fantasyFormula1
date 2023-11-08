@@ -5,9 +5,9 @@ import { mostrarPilotos } from "./comunes.js";
 
 let sectionPilotos = document.getElementById("section-pilotos");
 
-crearPilotos();
+crearJugadores();
 crearMenu();
-function crearPilotos() {
+function crearJugadores() {
     if (localStorage.getItem("jugadores")) {
         let jugadores = JSON.parse(localStorage.getItem("jugadores"));
 

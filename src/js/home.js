@@ -2,14 +2,23 @@ import { crearMenu } from "./menu.js";
 import { grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
 
+let usuario = new Usuario();
+
 let datos = localStorage.getItem("usuario");
-console.log(datos)
+console.log(datos);
 if (datos != null) {
     let u = JSON.parse(datos);
     console.log(u);
-    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
-}else{
-    window.location.href="index.html"
+    usuario = new Usuario(
+        u.nombre,
+        u.apellidos,
+        u.email,
+        u.nick,
+        u.password,
+        u.pil
+    );
+} else {
+    window.location.href = "index.html";
 }
 crearMenu();
 crearJugadores();
@@ -46,7 +55,9 @@ function noDisputado(granPremio) {
 }
 
 function crearBot($numero) {
-    return new Usuario("", "", "", "bot" + $numero, "");
+    let bot = new Usuario("", "", "", "bot" + $numero, []);
+    bot.asignarPilotos();
+    return bot;
 }
 
 function crearJugadores() {

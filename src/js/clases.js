@@ -2,8 +2,32 @@ import { pilotos } from "./objetos";
 
 export class Usuario {
     puntuacion = this.calcularPuntuacion();
+    pilotos = [
+        {
+            id: 1,
+            nombre: "",
+            apellido: "",
+            nacionalidad: "",
+            escuderia: "",
+            puntuacion: 0,
+            propiedadJugador: "",
+            rol: "",
+            srcFoto: "",
+        },
 
-    constructor(nom, ape, email, nick, password,pil) {
+        {
+            id: 2,
+            nombre: "",
+            nacionalidad: "",
+            escuderia: "",
+            puntuacion: 0,
+            propiedadJugador: "",
+            rol: "",
+            srcFoto: "",
+        },
+    ];
+
+    constructor(nom, ape, email, nick, password, pil) {
         this.nombre = nom;
         this.apellidos = ape;
         this.email = email;
@@ -14,7 +38,6 @@ export class Usuario {
 
     asignarPilotos() {
         let i = 0;
-        let competidores = [];
 
         do {
             let idPilotoAleatoria =
@@ -22,14 +45,11 @@ export class Usuario {
 
             for (let piloto of pilotos) {
                 if (piloto.id == idPilotoAleatoria && piloto.rol == "") {
-                    pilotos[i] = piloto;
-
+                    this.pilotos.push(piloto);
                     i++;
                 }
             }
         } while (i < 2);
-
-        this.pilotos= competidores;
     }
 
     calcularPuntuacion() {
@@ -43,5 +63,5 @@ export class Usuario {
     }
 }
 export class Credenciales {
-    usuarios = [new Usuario("adm", "adm", "admin@dom.es", "adm", "123456")];
+    usuarios = [new Usuario("adm", "adm", "admin@dom.es", "adm", "123456", [])];
 }
