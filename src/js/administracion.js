@@ -1,6 +1,6 @@
 import { puntuaciones, grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
-import { crearMenu } from "./menu.js";
+import { crearMenu, crearMenuAlternativo } from "./menu.js";
 import { crearPilotos } from "./comunes.js";
 
 let usuario = new Usuario();
@@ -22,7 +22,7 @@ if (datos != null) {
 } else {
     window.location.href = "index.html";
 }
-crearMenu();
+crearMenuAlternativo();
 
 const botonLanzarCarrera = document.getElementById("lanzar-carrera");
 

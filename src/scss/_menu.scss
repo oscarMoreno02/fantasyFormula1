@@ -25,4 +25,14 @@ header#menu {
         color: $color-white;
         text-transform: uppercase;
     }
+
+    &.izquierda {
+        min-height: 100vw;
+        width: fit-content;
+        padding-inline: 2rem;
+
+        * {
+            padding-bottom: 0.5rem;
+        }
+    }
 }
