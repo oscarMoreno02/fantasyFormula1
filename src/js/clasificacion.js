@@ -1,10 +1,10 @@
 import { Credenciales } from "./clases.js";
 import { Usuario } from "./clases.js";
 import { crearMenu } from "./menu.js";
-import { mostrarPilotos } from "./comunes.js";
 
 let sectionPilotos = document.getElementById("section-pilotos");
 
+actualizarClasificacion();
 crearJugadores();
 crearMenu();
 
@@ -42,4 +42,28 @@ function ordenarJugadores(jugador1, jugador2, jugador3) {
     jugadores.sort((a, b) => b.puntuacion - a.puntuacion);
 
     return jugadores;
+}
+
+function actualizarClasificacion() {
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let bot1 = usuario.rivales[0];
+    let bot2 = usuario.rivales[1];
+
+    let jugadores = [bot1, bot2, usuario];
+    let pilotos = JSON.parse(localStorage.getItem("pilotos"));
+
+    console.log(usuario);
+    console.log(pilotos);
+
+    for (let piloto of pilotos) {
+        for (let jugador of jugadores) {
+            for (let i = 0; i < jugador.pilotos.length; i++) {
+                if (jugador.pilotos[i].id === piloto.id) {
+                    jugador.pilotos[i] = piloto;
+                }
+            }
+        }
+    }
+
+    localStorage.setItem("usuario", JSON.stringify(usuario));
 }
