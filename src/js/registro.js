@@ -1,7 +1,7 @@
 import { Usuario, Credenciales } from "./clases.js";
-let user=localStorage.getItem('usuario')
-if(user!=null){
-    window.location.href="home.html"
+let user = localStorage.getItem("usuario");
+if (user != null) {
+    window.location.href = "home.html";
 }
 
 const inputNombre = document.getElementById("nombre");
@@ -37,7 +37,9 @@ if (datos != null) {
             element.apellidos,
             element.email,
             element.nick,
-            element.password
+            element.password,
+            element.pil,
+            element.rivales
         );
         lista.push(user);
     }
@@ -112,9 +114,10 @@ botonRegistro.addEventListener("click", function () {
     } else {
         let aux = comprobarRegistrados(email, nick);
         if (aux["valido"]) {
-            let user = new Usuario(nombre, apellidos, email, nick, psw);
+            let user = new Usuario(nombre, apellidos, email, nick, psw, [], []);
             console.log(user);
-            user.asignarPilotos()
+            user.asignarPilotos();
+            user.asignarRivales();
             guardarUsuarioCredenciales(user);
             window.location.href = "index.html";
         } else {

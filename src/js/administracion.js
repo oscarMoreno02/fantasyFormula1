@@ -1,16 +1,26 @@
-import { pilotos, puntuaciones, grandesPremios } from "./objetos.js";
+import { puntuaciones, grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
 import { crearMenu } from "./menu.js";
+import { crearPilotos } from "./comunes.js";
+
 let usuario = new Usuario();
 
 let datos = localStorage.getItem("usuario");
-console.log(datos)
+console.log(datos);
 if (datos != null) {
     let u = JSON.parse(datos);
     console.log(u);
-    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
-}else{
-    window.location.href="index.html"
+    usuario = new Usuario(
+        u.nombre,
+        u.apellidos,
+        u.email,
+        u.nick,
+        u.password,
+        u.pil,
+        u.rivales
+    );
+} else {
+    window.location.href = "index.html";
 }
 crearMenu();
 
@@ -25,6 +35,7 @@ botonLanzarCarrera.addEventListener("click", function () {
 
 function disputarGranPremio() {
     let carreras = grandesPremios;
+    let pilotos = crearPilotos();
 
     if (localStorage.getItem("grandes-premios")) {
         carreras = JSON.parse(localStorage.getItem("grandes-premios"));
@@ -62,19 +73,16 @@ function generarPosiciones(pilotos) {
 }
 
 function actualizarPuntuaciones() {
-    let competidores = pilotos;
+    let pilotos = crearPilotos();
     let carreras = grandesPremios;
 
-    if (localStorage.getItem("pilotos")) {
-        competidores = JSON.parse(localStorage.getItem("pilotos"));
-    }
     if (localStorage.getItem("grandes-premios")) {
         carreras = JSON.parse(localStorage.getItem("grandes-premios"));
     }
 
     for (let carrera of carreras) {
         for (let posicion of carrera.posiciones) {
-            for (let piloto of competidores) {
+            for (let piloto of pilotos) {
                 if (piloto.id == posicion.idPiloto) {
                     if (puntuaciones[posicion.posicion - 1]) {
                         piloto.puntuacion +=
@@ -85,5 +93,5 @@ function actualizarPuntuaciones() {
         }
     }
 
-    localStorage.setItem("pilotos", JSON.stringify(competidores));
+    localStorage.setItem("pilotos", JSON.stringify(pilotos));
 }

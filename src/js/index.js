@@ -1,49 +1,53 @@
-import { Usuario } from "./clases.js";
-import { Credenciales } from "./clases.js";
+import { Usuario, Credenciales } from "./clases.js";
+import { crearPilotos } from "./comunes.js";
 
-let user=localStorage.getItem("usuario")
-if(user!=null){
-    window.location.href="home.html"
+let user = localStorage.getItem("usuario");
+if (user != null) {
+    window.location.href = "home.html";
 }
 
 const botonLogin = document.getElementById("login");
 const botonRegistro = document.getElementById("btn-registro");
 const alertaLogin = document.getElementById("alertaLogin");
 
-const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
-const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
+const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
+const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
 
-let datos=localStorage.getItem('credenciales')
-let credenciales=new Credenciales()
-if(datos!=null){
-    let c=JSON.parse(datos)
-   let lista=[]
-    for(const element of c.usuarios){
-       
-        let user= 
-        new Usuario(element.nombre,element.apellidos,element.email,element.nick,element.password)
-        lista.push(user)
+let datos = localStorage.getItem("credenciales");
+let credenciales = new Credenciales();
+if (datos != null) {
+    let c = JSON.parse(datos);
+    let lista = [];
+    for (const element of c.usuarios) {
+        let user = new Usuario(
+            element.nombre,
+            element.apellidos,
+            element.email,
+            element.nick,
+            element.password,
+            element.pil,
+            element.rivales
+        );
+        lista.push(user);
     }
-    credenciales.usuarios=lista
-}
-console.log(credenciales)
-
-
-
-botonLogin.addEventListener('click',function(){
-let e=  document.getElementById("email").value
-let p= document.getElementById("password").value
-let msg={}
-msg=validarInicio(e,p)
-
-if(msg['valido']){
-    localStorage.setItem('usuario',JSON.stringify(msg['user']))
-    window.location.href='home.html'
-}else{
-    alertaLogin.textContent=msg['mensaje']
+    credenciales.usuarios = lista;
 }
 console.log(credenciales);
-})
+
+botonLogin.addEventListener("click", function () {
+    let e = document.getElementById("email").value;
+    let p = document.getElementById("password").value;
+    let msg = {};
+    msg = validarInicio(e, p);
+
+    if (msg["valido"]) {
+        localStorage.setItem("usuario", JSON.stringify(msg["user"]));
+        window.location.href = "home.html";
+    } else {
+        alertaLogin.textContent = msg["mensaje"];
+    }
+    console.log(credenciales);
+});
 botonLogin.addEventListener("click", function () {
     let e = document.getElementById("email").value;
     let p = document.getElementById("password").value;
@@ -99,7 +103,9 @@ function comprobarRegistro(e, p) {
                     u.apellidos,
                     u.email,
                     u.nick,
-                    u.password
+                    u.password,
+                    u.pil,
+                    u.rivales
                 );
                 correcto = true;
             }
@@ -119,3 +125,5 @@ function validarFormatoPassword(p) {
     let c = exRePassword.test(p);
     return c;
 }
+
+crearPilotos();

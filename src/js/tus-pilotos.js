@@ -17,6 +17,7 @@ btnAsignarTitular.addEventListener("click", function () {
 function crearPilotos() {
     let usuario = JSON.parse(localStorage.getItem("usuario"));
     let tusPilotos = usuario.pilotos;
+    console.log(usuario);
     console.log(tusPilotos);
 
     mostrarPilotos(divTusPilotos, tusPilotos);

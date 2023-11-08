@@ -1,18 +1,27 @@
 import { crearMenu } from "./menu.js";
 import { grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
-let usuario=new Usuario()
+
+let usuario = new Usuario();
 let datos = localStorage.getItem("usuario");
-console.log(datos)
+
+console.log(datos);
 if (datos != null) {
     let u = JSON.parse(datos);
     console.log(u);
-    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
-}else{
-    window.location.href="index.html"
+    usuario = new Usuario(
+        u.nombre,
+        u.apellidos,
+        u.email,
+        u.nick,
+        u.password,
+        u.pil,
+        u.rivales
+    );
+} else {
+    window.location.href = "index.html";
 }
 crearMenu();
-crearJugadores();
 
 var nombreCarrera = document.getElementById("nombre-carrera");
 var ubicacionCarrera = document.getElementById("ubicacion-carrera");
@@ -43,21 +52,4 @@ function cargarNoticias() {
 
 function noDisputado(granPremio) {
     return granPremio.disputado === false;
-}
-
-function crearBot($numero) {
-    return new Usuario("", "", "", "bot" + $numero, "");
-}
-
-function crearJugadores() {
-    if (!localStorage.getItem("jugadores")) {
-        let $jugador1 = localStorage.getItem("usuario");
-        let $bot1 = crearBot(1);
-        let $bot2 = crearBot(2);
-
-        localStorage.setItem(
-            "jugadores",
-            JSON.stringify([$jugador1, $bot1, $bot2])
-        );
-    }
 }
