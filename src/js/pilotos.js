@@ -1,6 +1,7 @@
 import { pilotos } from "./objetos.js";
 import { Usuario } from "./clases.js";
 import { crearMenu} from "./menu.js";
+import { mostrarPilotos } from "./comunes.js";
 
 let usuario = new Usuario();
 
