@@ -8,85 +8,70 @@
     <title>Fantasy Formula1</title>
 </head>
 
+<body>
+    <header id="menu"></header>
 
-<header style=" width: 100%; height: 10vh; background-color: red;" id="menu">
-           
-</header>
-    <body style="background-image:url(./assets/img/posible_fondo1.jpg);background-size:cover;background-position: center;background-repeat: no-repeat;">
-       
-        <div style=" height:90vh; display: flex; justify-content: center;" >
-        <div class="formulario"  style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:500px; height: 70vh;border-radius: 30px;padding:0px 140px 00px 0px ; ">
-            
+    <div style="height: 90vh; display: flex; justify-content: center; ">
+        <div class="formulario">
             <div class="container">
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h1>Fantasy F1</h1></div>
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div><h1>Fantasy F1</h1></div>
                     </div>
-                    
                 </div>
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h5>Login</h5></div>
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div><h5>Login</h5></div>
                     </div>
-                    
                 </div>
-                
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;">
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div>
                             <label for="email">Correo electrónico:</label>
                         </div>
                     </div>
-
                 </div>
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;">
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div>
                             <input type="text" id="email" name="email">
                         </div>
                     </div>
-
                 </div>
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;">
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div>
                             <label for="password">Contraseña:</label>
                         </div>
                     </div>
-
                 </div>
-                <div class="row">
-                    <div class="one column" style="width: 500px; border:1px ;" >
-                        <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;">
+                <div class="row row-container">
+                    <div class="one column one-column">
+                        <div>
                             <input type="password" id="password" name="password">
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
-                    <div class="row">
-                        <div class="one column" style="width: 500px; border:1px ;height: 30px;" >
-                            <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"> <p id="alertaLogin"></p></div>
+                    <div class="row row-container">
+                        <div class="one column one-column">
+                            <div><p id="alertaLogin"></p></div>
                         </div>
-                        
                     </div>
-                    
                 </div>
-              
-                <div class="row" style=" width: 625px; height:70px;padding-left:20% ;">
-                    <div class="one column" style=" width:150px; height: 70px;">
+                <div class="row row-button">
+                    <div class="one column column-button">
                         <button id="btn-registro">Registrarse</button>
                     </div>
-                    <div class="one column" style=" width:300px; height: 70px;">
+                    <div class="one column column-button2" >
                         <button id="login">Iniciar Sesión</button>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    
-        <script type="module" src="./js/index.js"></script>
-    </body>
-  
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
 
 </html>

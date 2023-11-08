@@ -15,88 +15,88 @@
     </div>
 </header>
 
-<body style="background-image:url(./assets/img/posible_fondo1.jpg);background-size:cover;background-position: center;background-repeat: no-repeat;">
+<body class="fondo">
    
-<div style=" height:90vh; display: flex; justify-content: center;" >
+<div class="cuerpo" >
 
-    <div class="formulario" style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 83vh;border-radius: 30px;padding:0px 70px 0px 70px ; ">
-        <div class="container " style="">
+    <div class="formulario-registro ">
+        <div class="container">
             <div class="row">
-                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
-                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h1>Fantasy F1</h1></div>
+                <div class="one column columna-titulo" >
+                    <div class="titulo"><h1>Fantasy F1</h1></div>
                 </div>
                 
             </div>
             <div class="row">
-                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
-                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><h5>Registro</h5></div>
+                <div class="one column columna-titulo" >
+                    <div class="titulo"><h5>Registro</h5></div>
                 </div>
                 
             </div>
-            <div class="row" style=" width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-principal">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre">
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal">
                     <label for="nombre">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos">
                 </div>
 
             </div>
-            <div class="row" style=" width: 625px; height:30px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas" >
                     <p id="alertaNombre"></p>
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas">
                     <p id="alertaApellidos"></p>
                 </div>
               
             </div>
 
-            <div class="row" style=" width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2" >
+                <div class="one column columna-principal">
                     <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal">
                     <label for="nick">Nick:</label><input type="text" id="nick" name="nick">
                 </div>
 
             </div>
-     <div class="row" style=" width: 625px; height:30px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas" >
                     <p id="alertaEmail"></p>
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas">
                     <p id="alertaNick"></p>
                 </div>
               
             </div>
 
-            <div class="row" style="width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-principal">
                     <label for="password1">Contraseña:</label><input type="password" id="password1" name="password1">
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal" >
                     <label for="password2">Repite tu contraseña </label><input type="password" id="password2"
                         name="password2">
                 </div>
             </div>
-            <div class="row" style=" width: 625px; height:30px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas">
                     <p id="alertaPassword"></p>
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas" >
                     <p id="alertaPassword2"></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="one column" style="width: 500px; border:1px" >
-                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><button id="btn-registro">Registrarse</button></div>
+            <div class="row fila-principal2">
+                <div class="one column columna-boton" >
+                    <div class="boton"><button id="btn-registro">Registrarse</button></div>
                 
         
                 </div>
-                <div class="one column" style="width: 400px; border:1px;padding: 0px;" >
+                <div class="one column columna-alerta-registro" >
                     <p id="alertaRegistro"> </p>
                 </div>
             </div>
@@ -118,5 +118,5 @@
 
     <script type="module" src="./js/registro.js"></script>
 </body>
-<footer style=" width: 100%; height:60px; background-color: red; margin-top: 100px;"></footer>
+<footer class="pie"></footer>
 </html>
