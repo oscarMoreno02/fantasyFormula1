@@ -41,7 +41,8 @@ if (datos != null) {
         u.email,
         u.nick,
         u.password,
-        u.pil
+        u.pil,
+        u.rivales
     );
 } else {
     window.location.href = "index.html";
@@ -60,7 +61,8 @@ if (datos != null) {
             element.email,
             element.nick,
             element.password,
-            element.pil
+            element.pil,
+            element.rivales
         );
         lista.push(user);
     }
@@ -153,7 +155,8 @@ botonCambioDatos.addEventListener("click", function () {
                 email,
                 usuario.nick,
                 usuario.psw,
-                usuario.pil
+                usuario.pil,
+                usuario.rivales
             );
             cambiarDatosUsuario(newUser);
         } else {
@@ -200,7 +203,8 @@ function cambiarPassword() {
                 usuario.email,
                 usuario.nick,
                 psw,
-                usuario.pil
+                usuario.pil,
+                usuario.rivales
             );
             cambiarDatosUsuario(newUser);
         }

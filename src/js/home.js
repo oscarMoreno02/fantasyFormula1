@@ -15,13 +15,13 @@ if (datos != null) {
         u.email,
         u.nick,
         u.password,
-        u.pil
+        u.pil,
+        u.rivales
     );
 } else {
     window.location.href = "index.html";
 }
 crearMenu();
-crearJugadores();
 
 var nombreCarrera = document.getElementById("nombre-carrera");
 var ubicacionCarrera = document.getElementById("ubicacion-carrera");
@@ -52,23 +52,4 @@ function cargarNoticias() {
 
 function noDisputado(granPremio) {
     return granPremio.disputado === false;
-}
-
-function crearBot($numero) {
-    let bot = new Usuario("", "", "", "bot" + $numero, []);
-    bot.asignarPilotos();
-    return bot;
-}
-
-function crearJugadores() {
-    if (!localStorage.getItem("jugadores")) {
-        let $jugador1 = localStorage.getItem("usuario");
-        let $bot1 = crearBot(1);
-        let $bot2 = crearBot(2);
-
-        localStorage.setItem(
-            "jugadores",
-            JSON.stringify([$jugador1, $bot1, $bot2])
-        );
-    }
 }

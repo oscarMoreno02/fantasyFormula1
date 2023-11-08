@@ -1,39 +1,19 @@
 import { pilotos } from "./objetos";
+import { crearBot } from "./comunes.js";
 
 export class Usuario {
     puntuacion = this.calcularPuntuacion();
-    pilotos = [
-        {
-            id: 1,
-            nombre: "",
-            apellido: "",
-            nacionalidad: "",
-            escuderia: "",
-            puntuacion: 0,
-            propiedadJugador: "",
-            rol: "",
-            srcFoto: "",
-        },
+    pilotos = [];
+    rivales = [];
 
-        {
-            id: 2,
-            nombre: "",
-            nacionalidad: "",
-            escuderia: "",
-            puntuacion: 0,
-            propiedadJugador: "",
-            rol: "",
-            srcFoto: "",
-        },
-    ];
-
-    constructor(nom, ape, email, nick, password, pil) {
+    constructor(nom, ape, email, nick, password, pil, rivales) {
         this.nombre = nom;
         this.apellidos = ape;
         this.email = email;
         this.nick = nick;
         this.password = password;
         this.pilotos = pil;
+        this.rivales = rivales;
     }
 
     asignarPilotos() {
@@ -52,6 +32,13 @@ export class Usuario {
         } while (i < 2);
     }
 
+    asignarRivales() {
+        let bot1 = crearBot(1);
+        let bot2 = crearBot(2);
+
+        this.rivales = [bot1, bot2];
+    }
+
     calcularPuntuacion() {
         let puntos = 0;
 
@@ -63,5 +50,7 @@ export class Usuario {
     }
 }
 export class Credenciales {
-    usuarios = [new Usuario("adm", "adm", "admin@dom.es", "adm", "123456", [])];
+    usuarios = [
+        new Usuario("adm", "adm", "admin@dom.es", "adm", "123456", [], []),
+    ];
 }

@@ -1,3 +1,6 @@
+import { Usuario } from "./clases.js";
+import { pilotos } from "./objetos.js";
+
 export function mostrarPilotos(div, competidores) {
     for (let piloto of competidores) {
         let tarjeta = document.createElement("div");
@@ -25,4 +28,20 @@ export function mostrarPilotos(div, competidores) {
 
         div.appendChild(tarjeta);
     }
+}
+
+export function crearBot($numero) {
+    let bot = new Usuario("", "", "", "Bot" + $numero, [], []);
+    bot.asignarPilotos();
+    return bot;
+}
+
+export function crearPilotos() {
+    let competidores = pilotos;
+
+    if (localStorage.getItem("pilotos")) {
+        competidores = JSON.parse(localStorage.getItem("pilotos"));
+    }
+
+    return competidores;
 }

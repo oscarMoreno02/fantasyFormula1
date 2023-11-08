@@ -7,23 +7,39 @@ let sectionPilotos = document.getElementById("section-pilotos");
 
 crearJugadores();
 crearMenu();
+
 function crearJugadores() {
-    if (localStorage.getItem("jugadores")) {
-        let jugadores = JSON.parse(localStorage.getItem("jugadores"));
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let bot1 = usuario.rivales[0];
+    let bot2 = usuario.rivales[1];
 
-        // TODO: HAY QUE ORDENAR LOS JUGADORES ANTES DE MOSTRARLOS
+    let jugadores = ordenarJugadores(usuario, bot1, bot2);
 
-        for (let i = 0; i < jugadores.length; i++) {
-            let pilotos = jugadores[i].pilotos;
-            let div = document.createElement("div");
-            let posicion = document.createElement("h2");
-            posicion.innerText = i + "º";
+    for (let i = 0; i < jugadores.length; i++) {
+        let tarjeta = document.createElement("div");
+        tarjeta.setAttribute("class", "tarjeta");
 
-            // TODO: CAMBIAR MOSTRAR PILOTOS POR MOSTRAR JUGADOR
+        let posicion = document.createElement("h2");
+        let puesto = i + 1;
+        posicion.innerText = puesto + "º";
+        tarjeta.appendChild(posicion);
 
-            div.appendChild(posicion);
-            mostrarPilotos(div, pilotos);
-            sectionPilotos.appendChild(div);
-        }
+        let nick = document.createElement("h3");
+        nick.innerText = jugadores[i].nick;
+        tarjeta.appendChild(nick);
+
+        let puntos = document.createElement("p");
+        puntos.innerHTML = "<b>Puntuación: </b>" + jugadores[i].puntuacion;
+        tarjeta.appendChild(puntos);
+
+        sectionPilotos.appendChild(tarjeta);
     }
+}
+
+function ordenarJugadores(jugador1, jugador2, jugador3) {
+    let jugadores = [jugador1, jugador2, jugador3];
+
+    jugadores.sort((a, b) => b.puntuacion - a.puntuacion);
+
+    return jugadores;
 }

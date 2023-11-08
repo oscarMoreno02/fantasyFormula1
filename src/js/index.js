@@ -1,5 +1,5 @@
-import { Usuario } from "./clases.js";
-import { Credenciales } from "./clases.js";
+import { Usuario, Credenciales } from "./clases.js";
+import { crearPilotos } from "./comunes.js";
 
 let user = localStorage.getItem("usuario");
 if (user != null) {
@@ -25,7 +25,8 @@ if (datos != null) {
             element.email,
             element.nick,
             element.password,
-            element.pil
+            element.pil,
+            element.rivales
         );
         lista.push(user);
     }
@@ -103,7 +104,8 @@ function comprobarRegistro(e, p) {
                     u.email,
                     u.nick,
                     u.password,
-                    u.pil
+                    u.pil,
+                    u.rivales
                 );
                 correcto = true;
             }
@@ -123,3 +125,5 @@ function validarFormatoPassword(p) {
     let c = exRePassword.test(p);
     return c;
 }
+
+crearPilotos();
