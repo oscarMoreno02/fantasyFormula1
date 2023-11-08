@@ -9,96 +9,96 @@
 </head>
 
 
-<body style="background-image:url(./assets/img/posible_fondo1.jpg);background-size:cover;background-position: center;background-repeat: no-repeat;">
+<body class="fondo">
     <header style=" width: 100%; height: 10vh; background-color: red;" id="menu">
       
     </header>
-    <div style=" height:90vh; display: flex; justify-content: center;" >
-    <div class="formulario"  style="margin-top:30px;background-color: #f8f4f0; border:1px solid black ; width:700px; height: 90vh;border-radius: 30px;padding:0px 70px 0px 70px ; ">
+    <div class="cuerpo" >
+    <div class="formulario">
         <div class="container">
             <div class="row">
-                <div class="one column" style="width: 500px; border:1px ;padding-bottom: 0px;" >
-                    <div style="width: 100%; display: flex; justify-content:center;;"><h1>Editar Perfil</h1></div>
+                <div class="one column columna-titulo" >
+                    <div class="titulo"><h1>Editar Perfil</h1></div>
                 </div>
                 
             </div>
           
-            <div class="row" style=" width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2 ">
+                <div class="one column columna-principal">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre">
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal">
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos">
                 </div>
 
             </div>
-            <div class="row" style=" width: 625px; height:30px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2" >
+                <div class="one column columna-alertas" >
                     <p id="alertaNombre"></p>
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas" >
                     <p id="alertaApellidos"></p>
                 </div>
               
             </div>
-            <div class="row" style=" width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2" >
+                <div class="one column columna-principal">
                     <label for="nick" >Nick:</label>
                     <input type="text" disabled id="nick" name="nick">
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal">
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email">
                 </div>
 
 
             </div>
-            <div class="row" style=" width: 625px; height:10px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2" >
+                <div class="one column columna-alertas" >
                     
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas">
                     <p id="alertaEmail"></p>
                 </div>
               
             </div>
             <div class="row">
-                <div class="one column" style="width: 500px; border:1px" >
-                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 15px;"><button id="btn-guardar-cambios">Guardar cambios</button></div>
+                <div class="one column columna-boton" >
+                    <div class="boton"><button id="btn-guardar-cambios">Guardar cambios</button></div>
                 
         
                 </div>
-                <div class="one column" style="width: 400px; " >
-                    <p id="alertaCambioDatos" style="height: 15px;"></p>
+                <div class="one column columna-alerta-cambios" >
+                    <p id="alertaCambioDatos" class="alerta-cambios"></p>
                 </div>
             </div>
-            <div class="row" style=" width: 625px; height:70px;">
-                <div class="one column" style=" width:300px; height: 70px;">
+            <div class="row fila-principal2" >
+                <div class="one column columna-principal">
                     <label for="password">Contraseña:</label><input type="password" id="password" name="password">
            
                 </div>
-                <div class="one column" style=" width:300px; height: 70px;">
+                <div class="one column columna-principal" >
                     <label for="nueva-password">Nueva Contraseña</label><input type="password" id="nueva-password"><br>
                 </div>
 
             </div>
-            <div class="row" style=" width: 625px; height:30px;">
-                <div class="one column" style=" width:300px; height: 10px;">
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas">
                     <p id="alertaPassword"></p>
                 </div>
-                <div class="one column" style=" width:300px; height: 10px;">
+                <div class="one column columna-alertas">
                     <p id="alertaPassword2"></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="one column" style="width: 500px; border:1px" >
-                    <div style="width: 100%; display: flex; justify-content:center;margin-top: 0px;"><button id="btn-cambiar-password">Cambiar contraseña</button></div>
+            <div class="row" >
+                <div class="one column columna-boton" >
+                    <div class="boton"><button id="btn-cambiar-password">Cambiar contraseña</button></div>
                 
         
                 </div>
-                <div class="one column" style="width: 400px; border:1px;padding: 0px;" >
+                <div class="one column columna-alerta-cambios " >
                     <p id="alertaCambioPassword"></p>
                 </div>
             </div>
@@ -110,5 +110,5 @@
 
     <script type="module" src="./js/perfil.js"></script>
 </body>
-<footer style=" width: 100%; height:60px; background-color: red; margin-top: 100px;"></footer>
+<footer class="pie"></footer>
 </html>
