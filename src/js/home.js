@@ -2,6 +2,15 @@ import { crearMenu } from "./menu.js";
 import { grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
 
+let datos = localStorage.getItem("usuario");
+console.log(datos)
+if (datos != null) {
+    let u = JSON.parse(datos);
+    console.log(u);
+    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
+}else{
+    window.location.href="index.html"
+}
 crearMenu();
 crearJugadores();
 

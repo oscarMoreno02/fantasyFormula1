@@ -15,20 +15,33 @@ const inputPassword = document.getElementById("password");
 
 const inputNick = document.getElementById("nick");
 
-const alertaNombre = document.getElementById("alertaNombre");
-const alertaApellidos = document.getElementById("alertaApellidos");
-const alertaNick = document.getElementById("alertaNick");
-const alertaEmail = document.getElementById("alertaEmail");
-const alertaPassword = document.getElementById("alertaPassword");
-const alertaPassword2 = document.getElementById("alertaPassword2");
-const alertaCambioDatos = document.getElementById("alertaCambioDatos");
-const alertaCambioPassword = document.getElementById("alertaCambioPassword");
+const alertaNombre=document.getElementById("alertaNombre")
+const alertaApellidos=document.getElementById("alertaApellidos")
+const alertaNick=document.getElementById("alertaNick")
+const alertaEmail=document.getElementById("alertaEmail")
+const alertaPassword=document.getElementById("alertaPassword")
+const alertaPassword2=document.getElementById("alertaPassword2")
+const alertaCambioDatos=document.getElementById("alertaCambioDatos")
+const alertaCambioPassword=document.getElementById("alertaCambioPassword")
 
-const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
-const exReNoAp = /^.{2,20}$/;
-const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
+const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/
+const exReNoAp = /^.{2,20}$/
+const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/
 
-let datos = localStorage.getItem("credenciales");
+let usuario = new Usuario();
+
+let datos = localStorage.getItem("usuario");
+console.log(datos)
+if (datos != null) {
+    let u = JSON.parse(datos);
+    console.log(u);
+    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
+}else{
+    window.location.href="index.html"
+}
+
+
+ datos = localStorage.getItem("credenciales");
 
 let credenciales = new Credenciales();
 if (datos != null) {
@@ -47,16 +60,6 @@ if (datos != null) {
     credenciales.usuarios = lista;
 }
 
-let usuario = credenciales.usuarios[0];
-
-datos = localStorage.getItem("usuario");
-
-if (datos != null) {
-    let u = JSON.parse(datos);
-    console.log(u);
-    usuario = new Usuario(u.nombre, u.apellidos, u.email, u.nick, u.password);
-}
-console.log(usuario);
 
 inputNombre.setAttribute("placeholder", usuario.nombre);
 console.log(usuario.apellidos);
