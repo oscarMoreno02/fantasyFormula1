@@ -1,0 +1,52 @@
+.fondo{
+    background-image:url(../assets/img/posible_fondo1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cuerpo{
+    height:90vh; display: flex; justify-content: center;
+    .formulario{
+        
+        margin-top:30px;background-color: #f8f4f0;
+         border:1px solid black ;
+          width:700px;
+           height: 83vh;
+          border-radius: 30px;
+          padding:0px 70px 0px 70px ;
+          .columna-titulo{
+            width: 500px;
+             border:1px ;
+        }
+        .titulo{
+            width: 100%; display: flex; justify-content:center;margin-top: 0px;
+        }
+        .fila-principal2{
+            width: 625px; height:45px;
+        }
+        .columna-principal{
+            width:300px; height: 40px;
+        }
+        .columna-alertas{
+            width:300px; height: 5px;margin-top: 23px;
+        }
+        .columna-boton{
+            width: 500px; 
+        }
+        .boton{
+            width: 100%; display: flex; justify-content:center;margin-top: 0px;
+        }
+        .columna-alerta-cambios{
+            width: 400px; 
+        }
+        .alerta-cambios{
+            height: 15px;
+        }
+    }
+
+   
+}
+
+.pie{
+    width: 100%; height:60px; background-color: red; margin-top: 100px
+}
