@@ -13,19 +13,18 @@ En este proyecto se realizará una réplica sencilla de Fantasy Football pero co
 
 - SASS
 - Bundler
+- Copyfiles
 
 ### Instalación de dependencias
 
-Se encuentran instaladas localmente, es suficiente con ejecutar `npm install` en el directorio del proyecto.
+Se encuentran instaladas en modo desarrollo, es suficiente con ejecutar `npm update` en el directorio del proyecto.
 
 ## Desarrollo y compilación del proyecto
 
 ### Descargar modulos
 Es imprescindible tener instalado en nuestro equipo `NodeJS` y el sistema de gestión de paquetes `npm`.
 
-Desde la [pagina oficial](https://nodejs.org/en/download) podremos elegir la versión que desesamos instalar.
-
-### Descargar modulos
+Desde la [página oficial](https://nodejs.org/en/download) podremos elegir la versión que deseamos instalar.
 
 Lanzando `npm update` podremos actualizar los modulos de nuestro proyecto a traves del instalador de paquetes y poder ejecutar el resto de comandos.
 
@@ -37,11 +36,29 @@ Lanzando `npm run dev` podremos cambiar nuestro proyecto y ver cambios en tiempo
 
 Para que nuestro proyecto se compile, se puede ejecutar `npm run build` y se crearán los archivos necesarios para el despliegue en el directorio `/dist`.
 
+Lanzando comando `npm run dev` se construye el proyecto previamente a lanzar el servidor y copia los ficheros necesarios al directorio `/dist`.
+
+#### Solución de errores
+
+Si no eres capaz de ver imágenes, prueba a modificar el fichero `package.json`.
+
+``` json
+    "scripts": {
+        "dev": " parcel build src/*.html --no-source-maps && copyfiles -u 1 src/assets/**/*.* dist && parcel src/*.*",
+        "build": "parcel build src/*.html --no-source-maps && copyfiles -u 1 src/assets/**/*.* dist"
+```
+
+Copia y pega en `scripts` el código superior o quita manualmente las comillas al indicar el directorio con `copyfiles`.
+
+Existen incompatibilidades en Linux y Windows al ejecutar estos comandos por el uso o no de estas comillas.
+
+_Si el error no se soluciona, se deberá copiar manualmente la carpeta assets a `/dist` desde `/src`._
+
 # Guia de estilos
 
 ## Descripción, voz y tono del sitio
 
-Adéntrate en nuestro sitio de fantasy de Fórmula 1, donde el diseño refinado y la paleta de colores meticulosamente seleccionada te sumergirán en una experiencia visualmente elegante. Con una interfaz pulcra, la claridad y precisión son la esencia, guiándote sin esfuerzo a través de la creación y gestión de equipos.
+Adéntrate en nuestro sitio de Fantasy de Fórmula 1, donde el diseño refinado y la paleta de colores meticulosamente seleccionada te sumergirán en una experiencia visualmente elegante. Con una interfaz pulcra, la claridad y precisión son la esencia, guiándote sin esfuerzo a través de la creación y gestión de equipos.
 
 La voz y tono del sitio reflejan un equilibrio perfecto entre entusiasmo controlado y profesionalismo, capturando la seriedad de la competición y la pasión por las carreras. Este enfoque no solo celebra la estrategia y la competencia, sino que también fomenta la empatía y la conexión en una comunidad unida.
 
@@ -96,7 +113,7 @@ En este rincón digital, la elegancia se fusiona con la emoción, creando un esp
 
 ![Logo oficial de Formula1](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/640px-F1.svg.png)
 
-Se usará en la parte superior izquierda de la cabecera. Pueden emplearse  variaciones en blanco o en negro.
+Se usará en la parte superior izquierda de la cabecera en las páginas con menú y en su parte central en las páginas de registro y login. Pueden emplearse  variaciones en blanco o en negro.
 
 ## Imágenes
 
@@ -112,9 +129,9 @@ Todas las imágenes tendrán el mismo tamaño original y mantendrán esta propor
 
 | Proporción | Formato         |
 | ---------- | --------------- |
-| 1:1        | `.png` o `.svg` |
+| Original   | `.png` o `.svg` |
 
-Las imágenes de los circuitos se mostrarán en formato cuadrado, con un tamaño relativo según las dimensiones de la pantalla.
+Las imágenes de los circuitos se mostrarán con su formato original, con un tamaño relativo según las dimensiones de la pantalla.
 
 Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
 
@@ -123,9 +140,19 @@ Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
 ## Elementos interactivos
 
 ### Cajas de texto
+
 ![Alt text](image-2.png)
+
+Las cajas de texto tendrán un borde redondeado y el fondo blanco, con los estilos predeterminados de **Skeleton**.
+
 ### Selectores
+
 ![Alt text](image.png)
+
+Como las cajas de texto, los selectores tendrán un borde redondeado y el fondo blanco, con los estilos predeterminados de **Skeleton**.
+
+Las selecciones se resaltarán al pasar el ratón sobre ellas con el color azul estándar al que ya están acostumbrados los usuarios.
+
 ### Botones
 
 ![Ejemplo de botones](/readme/botones.png)
@@ -133,8 +160,12 @@ Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
 Los botones usarán la fuente `Titillium Regular` y color de fuente blanco.
 
 Los botones principales usarán el color de fondo `F1 Warm Red` y los secundarios `F1 Carbon Black`.
+
+En el tema oscuro, se invertirán los colores de los botones secundarios y se mantendrá el de los principales.
+
 ## MAPA DE NAVEGACIÓN
-![Alt text](<readme/mapa de navegación f1(2).png>)
+
+![Esquema del mapa de navegación](<readme/mapa de navegación f1(2).png>)
 ## Recursos
 
 - [Fuentes](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
