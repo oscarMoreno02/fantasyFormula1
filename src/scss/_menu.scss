@@ -1,5 +1,6 @@
 header#menu {
     padding-block: 2rem;
+    height: fit-content;
 
     background-color: $color-red;
     color: $color-white;
@@ -9,6 +10,8 @@ header#menu {
     ul {
         padding-block: 0;
         margin-block: 0;
+        display: flex;
+        align-items: center;
     }
 
     li {
@@ -21,5 +24,15 @@ header#menu {
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
+    }
+
+    &.izquierda {
+        min-height: 100vw;
+        width: fit-content;
+        padding-inline: 2rem;
+
+        * {
+            padding-bottom: 0.5rem;
+        }
     }
 }
