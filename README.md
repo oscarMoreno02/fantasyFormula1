@@ -139,7 +139,8 @@ Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
 Los botones usarán la fuente `Titillium Regular` y color de fuente blanco.
 
 Los botones principales usarán el color de fondo `F1 Warm Red` y los secundarios `F1 Carbon Black`.
-
+## MAPA DE NAVEGACIÓN
+![Alt text](<readme/mapa de navegación f1(2).png>)
 ## Recursos
 
 - [Fuentes](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
