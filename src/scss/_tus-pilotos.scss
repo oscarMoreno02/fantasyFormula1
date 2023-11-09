@@ -1,0 +1,52 @@
+.tus-pilotos {
+    display: grid;
+    grid-template-areas: 'pilotos pilotos'
+                         'select boton';
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    
+    #tus-pilotos {
+        display: flex;
+        flex-direction: row;
+        grid-area: pilotos;
+        gap: 3rem;
+
+        padding-inline: 4rem;
+    }
+
+    #select-pilotos {
+        grid-area: select;
+        margin-block: 0;
+        margin-inline: auto;
+        width: fit-content;
+    }
+    
+    #btn-asignar-titular {
+        grid-area: boton;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    background-color: $color-off-white;
+    padding: 2rem;
+    border-radius: 5rem;
+    img {
+        min-width: 100%;
+    }
+    h4 {
+        font-family: $fuente-pilotos;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    h5 {
+        font-family: $fuente-escuderia;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+    p {
+        margin: 0;
+    }
+}

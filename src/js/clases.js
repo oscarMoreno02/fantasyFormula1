@@ -2,7 +2,7 @@ import { pilotos } from "./objetos";
 import { crearBot } from "./comunes.js";
 
 export class Usuario {
-    puntuacion = 0
+    puntuacion = 0;
     misPilotos = [];
     rivales = [];
 
@@ -22,22 +22,21 @@ export class Usuario {
         do {
             let idPilotoAleatoria =
                 Math.floor(Math.random() * pilotos.length) + 1;
-            
+
             for (let piloto of pilotos) {
                 if (piloto.id == idPilotoAleatoria && piloto.rol == "") {
-                    if(this.misPilotos.length==0){
-                        piloto.rol='titular'
-                    }else{
-                        piloto.rol='suplente'
+                    if (this.misPilotos.length == 0) {
+                        piloto.rol = " Titular";
+                    } else {
+                        piloto.rol = " Suplente";
                     }
-                    piloto.propiedadJugador=this.nick
-                    this.misPilotos.push(piloto)
+                    piloto.propiedadJugador = this.nick;
+                    this.misPilotos.push(piloto);
                     i++;
                 }
             }
-            
         } while (i < 2);
-        localStorage.setItem('pilotos',JSON.stringify(pilotos))
+        localStorage.setItem("pilotos", JSON.stringify(pilotos));
     }
 
     asignarRivales() {
