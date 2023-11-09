@@ -98,12 +98,6 @@ En este rincón digital, la elegancia se fusiona con la emoción, creando un esp
 
 Se usará en la parte superior izquierda de la cabecera. Pueden emplearse  variaciones en blanco o en negro.
 
-### Iconos
-
-Se usarán iconos del estilo **Material Filled** de [icons8](https://icons8.com/icons/material).
-
-Estos iconos son de estilo sólido, por lo que contrastan bien en monocolor. Además, icons8 nos permite modificarlos desde la web y obtenerlos en formato `.png` o `.svg`.
-
 ## Imágenes
 
 ### Fotografías de los pilotos
