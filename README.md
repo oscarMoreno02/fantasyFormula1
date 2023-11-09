@@ -20,6 +20,15 @@ Se encuentran instaladas localmente, es suficiente con ejecutar `npm install` en
 
 ## Desarrollo y compilación del proyecto
 
+### Descargar modulos
+Es imprescindible tener instalado en nuestro equipo `NodeJS` y el sistema de gestión de paquetes `npm`.
+
+Desde la [pagina oficial](https://nodejs.org/en/download) podremos elegir la versión que desesamos instalar.
+
+### Descargar modulos
+
+Lanzando `npm update` podremos actualizar los modulos de nuestro proyecto a traves del instalador de paquetes y poder ejecutar el resto de comandos.
+
 ### Montar un servidor de desarrollo
 
 Lanzando `npm run dev` podremos cambiar nuestro proyecto y ver cambios en tiempo real.
@@ -30,9 +39,13 @@ Para que nuestro proyecto se compile, se puede ejecutar `npm run build` y se cre
 
 # Guia de estilos
 
-## Descripción del sitio
+## Descripción, voz y tono del sitio
 
-## Voz y tono
+Adéntrate en nuestro sitio de fantasy de Fórmula 1, donde el diseño refinado y la paleta de colores meticulosamente seleccionada te sumergirán en una experiencia visualmente elegante. Con una interfaz pulcra, la claridad y precisión son la esencia, guiándote sin esfuerzo a través de la creación y gestión de equipos.
+
+La voz y tono del sitio reflejan un equilibrio perfecto entre entusiasmo controlado y profesionalismo, capturando la seriedad de la competición y la pasión por las carreras. Este enfoque no solo celebra la estrategia y la competencia, sino que también fomenta la empatía y la conexión en una comunidad unida.
+
+En este rincón digital, la elegancia se fusiona con la emoción, creando un espacio donde la precisión y la pasión por la Fórmula 1 se encuentran en cada interacción. Prepárate para una experiencia única donde los estilos utilizados no solo definen la estética, sino que también guían la voz que te acompañará en tu viaje por el emocionante mundo del fantasy automovilístico
 
 ## Colores
 
@@ -116,9 +129,9 @@ Tendrán un formato `.png` o `.svg` para mantener un fondo transparente.
 ## Elementos interactivos
 
 ### Cajas de texto
-
+![Alt text](image-2.png)
 ### Selectores
-
+![Alt text](image.png)
 ### Botones
 
 ![Ejemplo de botones](/readme/botones.png)
