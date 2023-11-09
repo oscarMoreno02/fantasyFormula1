@@ -9,13 +9,15 @@ crearJugadores();
 crearMenu();
 
 function crearJugadores() {
-    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let datos = JSON.parse(localStorage.getItem("usuario"));
+    let usuario=new Usuario(datos.nombre, datos.apellidos, datos.email, datos.nick, datos.psw,datos.misPilotos,datos.rivales)
     let bot1 = usuario.rivales[0];
     let bot2 = usuario.rivales[1];
 
     let jugadores = ordenarJugadores(usuario, bot1, bot2);
 
     for (let i = 0; i < jugadores.length; i++) {
+        console.log(jugadores)
         let tarjeta = document.createElement("div");
         tarjeta.setAttribute("class", "tarjeta");
 
@@ -45,21 +47,24 @@ function ordenarJugadores(jugador1, jugador2, jugador3) {
 }
 
 function actualizarClasificacion() {
-    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    let datos = JSON.parse(localStorage.getItem("usuario"));
+    console.log(datos)
+    let usuario=new Usuario(datos.nombre, datos.apellidos, datos.email, datos.nick, datos.psw,datos.misPilotos,datos.rivales)
+    console.log(usuario)
     let bot1 = usuario.rivales[0];
     let bot2 = usuario.rivales[1];
 
     let jugadores = [bot1, bot2, usuario];
     let pilotos = JSON.parse(localStorage.getItem("pilotos"));
+ 
 
-    console.log(usuario);
-    console.log(pilotos);
 
     for (let piloto of pilotos) {
         for (let jugador of jugadores) {
-            for (let i = 0; i < jugador.pilotos.length; i++) {
-                if (jugador.pilotos[i].id === piloto.id) {
-                    jugador.pilotos[i] = piloto;
+            console.log(jugador.misPilotos)
+            for (let i = 0; i < jugador.misPilotos.length; i++) {
+                if (jugador.misPilotos[i].id == piloto.id) {
+                    jugador.misPilotos[i] = piloto;
                 }
             }
         }

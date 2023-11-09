@@ -38,7 +38,7 @@ if (datos != null) {
             element.email,
             element.nick,
             element.password,
-            element.pil,
+            element.misPilotos,
             element.rivales
         );
         lista.push(user);
@@ -114,7 +114,7 @@ botonRegistro.addEventListener("click", function () {
     } else {
         let aux = comprobarRegistrados(email, nick);
         if (aux["valido"]) {
-            let user = new Usuario(nombre, apellidos, email, nick, psw, [], []);
+            let user = new Usuario(nombre, apellidos, email, nick, psw,[],[]);
             console.log(user);
             user.asignarPilotos();
             user.asignarRivales();

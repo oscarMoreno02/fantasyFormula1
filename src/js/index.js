@@ -25,7 +25,7 @@ if (datos != null) {
             element.email,
             element.nick,
             element.password,
-            element.pil,
+            element.misPilotos,
             element.rivales
         );
         lista.push(user);
@@ -58,6 +58,8 @@ botonLogin.addEventListener("click", function () {
         let u = JSON.stringify(msg["user"]);
 
         localStorage.setItem("usuario", u);
+        crearPilotos();
+
         window.location.href = "home.html";
     } else {
         alertaLogin.textContent = msg["mensaje"];
@@ -104,7 +106,7 @@ function comprobarRegistro(e, p) {
                     u.email,
                     u.nick,
                     u.password,
-                    u.pil,
+                    u.misPilotos,
                     u.rivales
                 );
                 correcto = true;
@@ -126,4 +128,3 @@ function validarFormatoPassword(p) {
     return c;
 }
 
-crearPilotos();

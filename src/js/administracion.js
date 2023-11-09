@@ -16,7 +16,7 @@ if (datos != null) {
         u.email,
         u.nick,
         u.password,
-        u.pil,
+        u.misPilotos,
         u.rivales
     );
 } else {

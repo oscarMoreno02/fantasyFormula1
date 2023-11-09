@@ -3,7 +3,7 @@ import { crearBot } from "./comunes.js";
 
 export class Usuario {
     puntuacion = this.calcularPuntuacion();
-    pilotos = [];
+    misPilotos = [];
     rivales = [];
 
     constructor(nom, ape, email, nick, password, pil, rivales) {
@@ -12,7 +12,7 @@ export class Usuario {
         this.email = email;
         this.nick = nick;
         this.password = password;
-        this.pilotos = pil;
+        this.misPilotos = pil;
         this.rivales = rivales;
     }
 
@@ -22,13 +22,14 @@ export class Usuario {
         do {
             let idPilotoAleatoria =
                 Math.floor(Math.random() * pilotos.length) + 1;
-
+            let pilotosAsignados=[]
             for (let piloto of pilotos) {
                 if (piloto.id == idPilotoAleatoria && piloto.rol == "") {
-                    this.pilotos.push(piloto);
+                    pilotosAsignados.push(piloto)
                     i++;
                 }
             }
+            console.log(pilotosAsignados)
         } while (i < 2);
     }
 

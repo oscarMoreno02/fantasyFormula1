@@ -41,7 +41,7 @@ if (datos != null) {
         u.email,
         u.nick,
         u.password,
-        u.pil,
+        u.misPilotos,
         u.rivales
     );
 } else {
@@ -61,7 +61,7 @@ if (datos != null) {
             element.email,
             element.nick,
             element.password,
-            element.pil,
+            element.misPilotos,
             element.rivales
         );
         lista.push(user);
@@ -155,7 +155,7 @@ botonCambioDatos.addEventListener("click", function () {
                 email,
                 usuario.nick,
                 usuario.psw,
-                usuario.pil,
+                usuario.misPilotos,
                 usuario.rivales
             );
             cambiarDatosUsuario(newUser);
@@ -203,7 +203,7 @@ function cambiarPassword() {
                 usuario.email,
                 usuario.nick,
                 psw,
-                usuario.pil,
+                usuario.misPilotos,
                 usuario.rivales
             );
             cambiarDatosUsuario(newUser);
