@@ -38,7 +38,7 @@ export function crearBot($numero) {
 
 export function crearPilotos() {
     let competidores = pilotos;
-
+    
     if (localStorage.getItem("pilotos")) {
         competidores = JSON.parse(localStorage.getItem("pilotos"));
     }

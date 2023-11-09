@@ -25,12 +25,19 @@ export class Usuario {
             
             for (let piloto of pilotos) {
                 if (piloto.id == idPilotoAleatoria && piloto.rol == "") {
+                    if(this.misPilotos.length==0){
+                        piloto.rol='titular'
+                    }else{
+                        piloto.rol='suplente'
+                    }
+                    piloto.propiedadJugador=this.nick
                     this.misPilotos.push(piloto)
                     i++;
                 }
             }
             
         } while (i < 2);
+        localStorage.setItem('pilotos',JSON.stringify(pilotos))
     }
 
     asignarRivales() {

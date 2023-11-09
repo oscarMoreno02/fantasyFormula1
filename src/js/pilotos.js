@@ -26,4 +26,5 @@ let sectionPilotos = document.getElementById("section-pilotos");
 
 crearMenu();
 let pilotos = crearPilotos();
+console.log(pilotos)
 mostrarPilotos(sectionPilotos, pilotos);

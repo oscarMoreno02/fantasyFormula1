@@ -57,7 +57,7 @@ function actualizarClasificacion() {
     let pilotos = JSON.parse(localStorage.getItem("pilotos"));
  
 
-console.log(jugadores)
+
     for (let piloto of pilotos) {
         for (let jugador of jugadores) {
             for (let i = 0; i < jugador.misPilotos.length; i++) {
