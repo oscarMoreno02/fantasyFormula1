@@ -19,11 +19,15 @@ export function mostrarPilotos(div, competidores) {
         tarjeta.appendChild(escuderia);
 
         let puntos = document.createElement("p");
-        puntos.innerHTML = "<b>Puntuación:</b>" + piloto.puntuacion;
+        puntos.innerHTML = "<b>Puntuación: </b>" + piloto.puntuacion;
         tarjeta.appendChild(puntos);
 
+        let rol = document.createElement("p");
+        rol.innerHTML = "<b>Rol: </b>" + piloto.rol;
+        tarjeta.appendChild(rol);
+
         let propiedad = document.createElement("p");
-        propiedad.innerHTML = "<b>Rol:</b>" + piloto.rol;
+        propiedad.innerHTML = "<b>Dueño: </b>" + piloto.propiedadJugador;
         tarjeta.appendChild(propiedad);
 
         div.appendChild(tarjeta);
@@ -38,7 +42,7 @@ export function crearBot($numero) {
 
 export function crearPilotos() {
     let competidores = pilotos;
-    
+
     if (localStorage.getItem("pilotos")) {
         competidores = JSON.parse(localStorage.getItem("pilotos"));
     }

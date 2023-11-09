@@ -10,14 +10,21 @@ crearJugadores();
 
 function crearJugadores() {
     let datos = JSON.parse(localStorage.getItem("usuario"));
-    let usuario=new Usuario(datos.nombre, datos.apellidos, datos.email, datos.nick, datos.psw,datos.misPilotos,datos.rivales)
+    let usuario = new Usuario(
+        datos.nombre,
+        datos.apellidos,
+        datos.email,
+        datos.nick,
+        datos.psw,
+        datos.misPilotos,
+        datos.rivales
+    );
     let bot1 = usuario.rivales[0];
     let bot2 = usuario.rivales[1];
 
     let jugadores = ordenarJugadores(usuario, bot1, bot2);
 
     for (let i = 0; i < jugadores.length; i++) {
-       
         let tarjeta = document.createElement("div");
         tarjeta.setAttribute("class", "tarjeta");
 
@@ -31,7 +38,10 @@ function crearJugadores() {
         tarjeta.appendChild(nick);
 
         let puntos = document.createElement("p");
-        puntos.innerHTML = "<b>Puntuación: </b>" + (jugadores[i].misPilotos[0].puntuacion+ jugadores[i].misPilotos[1].puntuacion);
+        puntos.innerHTML =
+            "<b>Puntuación: </b>" +
+            (jugadores[i].misPilotos[0].puntuacion +
+                jugadores[i].misPilotos[1].puntuacion);
         tarjeta.appendChild(puntos);
 
         sectionPilotos.appendChild(tarjeta);
@@ -48,15 +58,21 @@ function ordenarJugadores(jugador1, jugador2, jugador3) {
 
 function actualizarClasificacion() {
     let datos = JSON.parse(localStorage.getItem("usuario"));
-   
-    let usuario=new Usuario(datos.nombre, datos.apellidos, datos.email, datos.nick, datos.psw,datos.misPilotos,datos.rivales)
+
+    let usuario = new Usuario(
+        datos.nombre,
+        datos.apellidos,
+        datos.email,
+        datos.nick,
+        datos.psw,
+        datos.misPilotos,
+        datos.rivales
+    );
     let bot1 = usuario.rivales[0];
     let bot2 = usuario.rivales[1];
 
     let jugadores = [bot1, bot2, usuario];
     let pilotos = JSON.parse(localStorage.getItem("pilotos"));
- 
-
 
     for (let piloto of pilotos) {
         for (let jugador of jugadores) {

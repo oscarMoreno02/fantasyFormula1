@@ -17,7 +17,6 @@ btnAsignarTitular.addEventListener("click", function () {
 function crearPilotos() {
     let usuario = JSON.parse(localStorage.getItem("usuario"));
     let tusPilotos = usuario.misPilotos;
- 
 
     mostrarPilotos(divTusPilotos, tusPilotos);
 
@@ -32,55 +31,51 @@ function crearPilotos() {
 
 function cambiarTitular() {
     let seleccionado = selectPilotos.value;
-  
+
     let usuario = JSON.parse(localStorage.getItem("usuario"));
     let tusPilotos = usuario.misPilotos;
-    
+
     if (tusPilotos[seleccionado].id != tusPilotos[0].id) {
         let nuevoTitular = tusPilotos[seleccionado];
 
         tusPilotos[1] = tusPilotos[0];
         tusPilotos[0] = nuevoTitular;
-        tusPilotos[0].rol='titular'
-        tusPilotos[1].rol='suplente'
-      
-        let listaPilotos=JSON.parse(localStorage.getItem('pilotos'))
-      
-        let continuar=0
-        let i=0
-        
-        while (continuar<1){
-           
-            console.log(tusPilotos[0])
-            
-            if(listaPilotos[i].id==tusPilotos[0].id){
-                console.log(tusPilotos[0])
-                console.log(listaPilotos[i])
-                listaPilotos[i].rol='titular'
-               
-                continuar++
-            }
-            i++
-        }
-         continuar=0
-         i=0
-      
-        while (continuar<1){
-    
-            if(listaPilotos[i].id==tusPilotos[1].id){
-                console.log(tusPilotos[1])
-                console.log(listaPilotos[i])
-                listaPilotos[i].rol='suplente'
-               
-                continuar++
-            }
-            i++
-        }
-        
+        tusPilotos[0].rol = " Titular";
+        tusPilotos[1].rol = " Suplente";
 
-        localStorage.setItem('pilotos',JSON.stringify(listaPilotos))
-        localStorage.setItem('usuario',JSON.stringify(usuario))
-        window.location.reload()
+        let listaPilotos = JSON.parse(localStorage.getItem("pilotos"));
+
+        let continuar = 0;
+        let i = 0;
+
+        while (continuar < 1) {
+            console.log(tusPilotos[0]);
+
+            if (listaPilotos[i].id == tusPilotos[0].id) {
+                console.log(tusPilotos[0]);
+                console.log(listaPilotos[i]);
+                listaPilotos[i].rol = " Titular";
+
+                continuar++;
+            }
+            i++;
+        }
+        continuar = 0;
+        i = 0;
+
+        while (continuar < 1) {
+            if (listaPilotos[i].id == tusPilotos[1].id) {
+                console.log(tusPilotos[1]);
+                console.log(listaPilotos[i]);
+                listaPilotos[i].rol = " Suplente";
+
+                continuar++;
+            }
+            i++;
+        }
+
+        localStorage.setItem("pilotos", JSON.stringify(listaPilotos));
+        localStorage.setItem("usuario", JSON.stringify(usuario));
+        window.location.reload();
     }
-    
 }
