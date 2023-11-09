@@ -1,5 +1,5 @@
 import { Usuario } from "./clases.js";
-import { crearMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 import { crearPilotos, mostrarPilotos } from "./comunes.js";
 
 let usuario = new Usuario();

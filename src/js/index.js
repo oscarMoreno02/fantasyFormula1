@@ -1,6 +1,10 @@
 import { Usuario, Credenciales } from "./clases.js";
 import { crearPilotos } from "./comunes.js";
 
+if (!localStorage.getItem("tema")) {
+    localStorage.setItem("tema", "claro");
+}
+
 let user = localStorage.getItem("usuario");
 if (user != null) {
     window.location.href = "home.html";

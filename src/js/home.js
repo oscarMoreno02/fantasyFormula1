@@ -1,4 +1,4 @@
-import { crearMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 import { grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
 

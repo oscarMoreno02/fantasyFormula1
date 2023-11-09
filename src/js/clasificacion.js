@@ -1,12 +1,12 @@
 import { Credenciales } from "./clases.js";
 import { Usuario } from "./clases.js";
-import { crearMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 
 let sectionPilotos = document.getElementById("section-pilotos");
 
+crearMenu();
 actualizarClasificacion();
 crearJugadores();
-crearMenu();
 
 function crearJugadores() {
     let datos = JSON.parse(localStorage.getItem("usuario"));

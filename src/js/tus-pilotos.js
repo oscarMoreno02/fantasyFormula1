@@ -1,6 +1,6 @@
 import { Usuario } from "./clases.js";
 import { pilotos } from "./objetos.js";
-import { crearMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 import { mostrarPilotos } from "./comunes.js";
 
 let divTusPilotos = document.getElementById("tus-pilotos");
