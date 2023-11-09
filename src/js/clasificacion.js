@@ -1,6 +1,6 @@
 import { Credenciales } from "./clases.js";
 import { Usuario } from "./clases.js";
-import { crearMenu, cambiarMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 
 let sectionPilotos = document.getElementById("section-pilotos");
 

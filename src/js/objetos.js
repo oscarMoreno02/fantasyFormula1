@@ -10,7 +10,7 @@ export var pilotos = [
         rol: "",
         srcFoto: "./assets/img/pilotos/george-russell.jpg",
     },
-    
+
     {
         id: 2,
         nombre: "Lewis",

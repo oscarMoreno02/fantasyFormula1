@@ -1,6 +1,6 @@
 import { puntuaciones, grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
-import { crearMenu } from "./menu.js";
+import { crearMenu, cambiarTema } from "./menu.js";
 import { crearPilotos } from "./comunes.js";
 
 let usuario = new Usuario();

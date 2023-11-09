@@ -14,14 +14,6 @@
 @import "tus-pilotos";
 @import "menu";
 
-// html {
-//     background-color: $color-off-white;
-//     background-image: url(../assets/img/fondo.jpg);
-//     object-fit: contain;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
-
 body {
     font-family: $font-body;
 }
@@ -33,5 +25,9 @@ main {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
+
+    &#logo {
+        max-width: 150px;
+    }
 }
