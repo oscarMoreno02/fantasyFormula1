@@ -2,7 +2,7 @@ import { pilotos } from "./objetos";
 import { crearBot } from "./comunes.js";
 
 export class Usuario {
-    puntuacion = this.calcularPuntuacion();
+    puntuacion = 0
     misPilotos = [];
     rivales = [];
 
@@ -22,14 +22,14 @@ export class Usuario {
         do {
             let idPilotoAleatoria =
                 Math.floor(Math.random() * pilotos.length) + 1;
-            let pilotosAsignados=[]
+            
             for (let piloto of pilotos) {
                 if (piloto.id == idPilotoAleatoria && piloto.rol == "") {
-                    pilotosAsignados.push(piloto)
+                    this.misPilotos.push(piloto)
                     i++;
                 }
             }
-            console.log(pilotosAsignados)
+            
         } while (i < 2);
     }
 
