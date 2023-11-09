@@ -1,7 +1,7 @@
 import { Usuario } from "./clases.js";
 import { Credenciales } from "./clases.js";
-import { crearMenu } from "./menu.js";
-import {mostrarPilotos} from "./comunes.js"
+import { crearMenu, cambiarMenu } from "./menu.js";
+import { mostrarPilotos } from "./comunes.js";
 crearMenu();
 
 const inputNuevaPassword = document.getElementById("nueva-password");
