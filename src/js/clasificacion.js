@@ -17,7 +17,7 @@ function crearJugadores() {
     let jugadores = ordenarJugadores(usuario, bot1, bot2);
 
     for (let i = 0; i < jugadores.length; i++) {
-        console.log(jugadores)
+       
         let tarjeta = document.createElement("div");
         tarjeta.setAttribute("class", "tarjeta");
 
@@ -31,7 +31,7 @@ function crearJugadores() {
         tarjeta.appendChild(nick);
 
         let puntos = document.createElement("p");
-        puntos.innerHTML = "<b>Puntuación: </b>" + jugadores[i].puntuacion;
+        puntos.innerHTML = "<b>Puntuación: </b>" + (jugadores[i].misPilotos[0].puntuacion+ jugadores[i].misPilotos[1].puntuacion);
         tarjeta.appendChild(puntos);
 
         sectionPilotos.appendChild(tarjeta);
@@ -48,9 +48,8 @@ function ordenarJugadores(jugador1, jugador2, jugador3) {
 
 function actualizarClasificacion() {
     let datos = JSON.parse(localStorage.getItem("usuario"));
-    console.log(datos)
+   
     let usuario=new Usuario(datos.nombre, datos.apellidos, datos.email, datos.nick, datos.psw,datos.misPilotos,datos.rivales)
-    console.log(usuario)
     let bot1 = usuario.rivales[0];
     let bot2 = usuario.rivales[1];
 
@@ -58,10 +57,9 @@ function actualizarClasificacion() {
     let pilotos = JSON.parse(localStorage.getItem("pilotos"));
  
 
-
+console.log(jugadores)
     for (let piloto of pilotos) {
         for (let jugador of jugadores) {
-            console.log(jugador.misPilotos)
             for (let i = 0; i < jugador.misPilotos.length; i++) {
                 if (jugador.misPilotos[i].id == piloto.id) {
                     jugador.misPilotos[i] = piloto;
