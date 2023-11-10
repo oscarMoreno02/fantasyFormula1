@@ -1,7 +1,7 @@
 import { puntuaciones, grandesPremios } from "./objetos.js";
 import { Usuario } from "./clases.js";
 import { crearMenu, cambiarTema } from "./menu.js";
-import { crearPilotos } from "./comunes.js";
+import { crearPilotos, noDisputado } from "./comunes.js";
 
 let usuario = new Usuario();
 
@@ -37,20 +37,24 @@ function disputarGranPremio() {
     let carreras = grandesPremios;
     let pilotos = crearPilotos();
 
-    if (localStorage.getItem("grandes-premios")) {
-        carreras = JSON.parse(localStorage.getItem("grandes-premios"));
-    }
-
-    for (var i = 0; i < carreras.length; i++) {
-        var granPremio = carreras[i];
-        if (!granPremio.disputado) {
-            granPremio.posiciones = generarPosiciones(pilotos);
-            granPremio.disputado = true;
-            break;
+    if (grandesPremios.find(noDisputado) == undefined) {
+        botonLanzarCarrera.setAttribute("disabled", "true");
+    } else {
+        if (localStorage.getItem("grandes-premios")) {
+            carreras = JSON.parse(localStorage.getItem("grandes-premios"));
         }
-    }
 
-    return carreras;
+        for (var i = 0; i < carreras.length; i++) {
+            var granPremio = carreras[i];
+            if (!granPremio.disputado) {
+                granPremio.posiciones = generarPosiciones(pilotos);
+                granPremio.disputado = true;
+                break;
+            }
+        }
+
+        return carreras;
+    }
 }
 
 function generarPosiciones(pilotos) {
