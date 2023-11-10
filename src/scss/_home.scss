@@ -1,0 +1,42 @@
+.fondo-home{
+    background-image:url(https://oscardespliegue.000webhostapp.com/fotosf1/assets/fotos/coche_negro_azul.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.noticias {
+    margin: 2rem auto;
+
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    background-color: $color-off-white;
+    padding: 2rem;
+    border-radius: 5rem;
+
+    img {
+        max-height: 35vh;
+    }
+
+    h4 {
+        font-family: $fuente-pilotos;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h5 {
+        font-family: $fuente-escuderia;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}

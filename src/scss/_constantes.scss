@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+
+@font-face {
+    font-family: "f1-regular";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../assets/fonts/f1-regular.woff) format("woff");
+}
+@font-face {
+    font-family: "f1-torque";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../assets/fonts/f1-torque.woff) format("woff");
+}
+@font-face {
+    font-family: "f1-turbo";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../assets/fonts/f1-turbo.woff) format("woff");
+}
+
+$font-body: "Titillium Web", sans-serif;
+$color-black: #0c0c18;
+$color-off-white: #f8f4f0;
+$color-red: #ff1800;
+$color-white: #fff;
+
+$fuente-pilotos: "f1-regular", "Titillium Web", sans-serif;
+$fuente-escuderia: "f1-torque", "Titillium Web", sans-serif;

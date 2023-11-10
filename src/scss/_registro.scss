@@ -1,0 +1,51 @@
+.fondo-registro{
+    background-image:url(https://oscardespliegue.000webhostapp.com/fotosf1/assets/fotos/renaultjpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+  }
+.cuerpo{
+    height:90vh; display: flex; justify-content: center;
+    .formulario-registro{
+        height: 70vh;
+        margin-top:30px;background-color: #f8f4f0;
+         border:1px solid black ;
+          width:700px; height: 83vh;
+          border-radius: 30px;
+          padding:0px 70px 0px 70px ;
+          .columna-titulo{
+            width: 500px;
+             border:1px ;
+        }
+        .titulo{
+            width: 100%; display: flex; justify-content:center;margin-top: 0px;
+        }
+        .fila-principal2{
+            width: 625px; height:50px;
+        }
+        .columna-principal{
+            width:300px; height: 40px;
+        }
+        .columna-alertas{
+            width:300px; height: 5px;margin-top: 20px;
+        }
+        .columna-boton{
+            width: 500px; border:1px
+        }
+        .boton{
+            width: 100%; display: flex; justify-content:center;margin-top: 0px;
+        }
+        .columna-alerta-registro{
+            width: 400px; border:1px;padding: 0px
+        }
+        
+    }
+
+   
+}
+

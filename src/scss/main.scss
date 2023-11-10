@@ -1,0 +1,57 @@
+@import "constantes";
+
+@import "normalize";
+@import "skeleton";
+
+@import "botones";
+@import "administracion";
+@import "clasificacion";
+@import "home";
+@import "index";
+@import "perfil";
+@import "pilotos";
+@import "registro";
+@import "tus-pilotos";
+@import "menu";
+
+body {
+    font-family: $font-body;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+
+    &#logo {
+        max-width: 150px;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100vw;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: $color-red;
+
+    padding-block: 1rem;
+
+    * {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &.oscuro {
+        background-color: $color-black;
+    }
+}

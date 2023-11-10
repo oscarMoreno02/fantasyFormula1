@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="./scss/_normalize.scss">
+    <link rel="stylesheet" href="./scss/_skeleton.scss">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <title>Registro</title>
+</head>
+<header >
+    <div style=" width: 100px; height:100px" class="container">
+        <img alt="logo" class="logo" src="https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/logoBlanco.svg">
+    </div>
+</header>
+
+<body class="fondo-registro">
+   
+<div class="cuerpo" >
+
+    <div class="formulario-registro ">
+        <div class="container">
+            <div class="row">
+                <div class="one column columna-titulo" >
+                    <div class="titulo"><h1>Fantasy F1</h1></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="one column columna-titulo" >
+                    <div class="titulo"><h5>Registro</h5></div>
+                </div>
+                
+            </div>
+            <div class="row fila-principal2">
+                <div class="one column columna-principal">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="one column columna-principal">
+                    <label for="nombre">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+
+            </div>
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas" >
+                    <p id="alertaNombre"></p>
+                </div>
+                <div class="one column columna-alertas">
+                    <p id="alertaApellidos"></p>
+                </div>
+              
+            </div>
+
+            <div class="row fila-principal2" >
+                <div class="one column columna-principal">
+                    <label for="email">Correo electrónico:</label><input type="text" id="email" name="email">
+                </div>
+                <div class="one column columna-principal">
+                    <label for="nick">Nick:</label><input type="text" id="nick" name="nick">
+                </div>
+
+            </div>
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas" >
+                    <p id="alertaEmail"></p>
+                </div>
+                <div class="one column columna-alertas">
+                    <p id="alertaNick"></p>
+                </div>
+              
+            </div>
+
+            <div class="row fila-principal2">
+                <div class="one column columna-principal">
+                    <label for="password1">Contraseña:</label><input type="password" id="password1" name="password1">
+                </div>
+                <div class="one column columna-principal" >
+                    <label for="password2">Repite tu contraseña </label><input type="password" id="password2"
+                        name="password2">
+                </div>
+            </div>
+            <div class="row fila-principal2">
+                <div class="one column columna-alertas">
+                    <p id="alertaPassword"></p>
+                </div>
+                <div class="one column columna-alertas" >
+                    <p id="alertaPassword2"></p>
+                </div>
+            </div>
+            <div class="row fila-principal2">
+                <div class="one column columna-boton" >
+                    <div class="boton"><button id="btn-registro">Registrarse</button></div>
+                
+        
+                </div>
+                <div class="one column columna-alerta-registro" >
+                    <p id="alertaRegistro"> </p>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+
+
+
+
+
+</div>
+       
+<footer id="footer">
+    <p>Óscar moreno & Elena Rodríguez</p>
+    <a href="https://cifpvirgendegracia.com/">CIFP Virgen de Gracia</a>
+</footer>
+
+   
+
+    <script type="module" src="./js/registro.js"></script>
+</body>
+<footer class="pie"></footer>
+</html>

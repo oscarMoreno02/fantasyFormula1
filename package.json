@@ -1,0 +1,20 @@
+{
+    "name": "fantasyformula1",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000f\u0000a\u0000n\u0000t\u0000a\u0000s\u0000y\u0000F\u0000o\u0000r\u0000m\u0000u\u0000l\u0000a\u00001\u0000\r\u0000 \u0000",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": " parcel build src/*.html --no-source-maps && copyfiles -u 1 'src/assets/**/*.*' dist && parcel src/*.*",
+        "build": "parcel build src/*.html --no-source-maps && copyfiles -u 1 'src/assets/**/*.*' dist"
+
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.10.2",
+        "copyfiles": "^2.4.1",
+        "parcel": "^2.10.2",
+        "sass": "^1.69.3"
+    }
+}
