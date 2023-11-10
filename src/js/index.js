@@ -73,6 +73,11 @@ botonLogin.addEventListener("click", function () {
 botonRegistro.addEventListener("click", function () {
     window.location.href = "registro.html";
 });
+document.addEventListener('keydown', function(keyboardEvent) {
+    if (keyboardEvent.key === 'Enter') {
+        botonLogin.click()
+    }
+});
 
 function validarInicio(email, password) {
     let correcto = {};

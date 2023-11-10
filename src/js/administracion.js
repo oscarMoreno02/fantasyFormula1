@@ -8,7 +8,7 @@ let usuario = new Usuario();
 let datos = localStorage.getItem("usuario");
 let grandesPremios = JSON.parse(localStorage.getItem("grandes-premios"));
 
-console.log(grandesPremios);
+
 if (datos != null) {
     let u = JSON.parse(datos);
 
@@ -28,7 +28,6 @@ crearMenu();
 
 const botonLanzarCarrera = document.getElementById("lanzar-carrera");
 
-console.log(grandesPremios.find(noDisputado));
 if (grandesPremios.find(noDisputado) == undefined) {
     botonLanzarCarrera.setAttribute("disabled", "true");
 }
@@ -39,7 +38,11 @@ botonLanzarCarrera.addEventListener("click", function () {
     localStorage.setItem("grandes-premios", JSON.stringify(carreras));
     window.location.href = "./home.html";
 });
-
+document.addEventListener('keydown', function(keyboardEvent) {
+    if (keyboardEvent.key === 'Enter') {
+        botonLanzarCarrera.click()
+    }
+});
 function disputarGranPremio() {
     let carreras = grandesPremios;
     let pilotos = crearPilotos();

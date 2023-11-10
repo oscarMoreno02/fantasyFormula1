@@ -124,6 +124,12 @@ botonRegistro.addEventListener("click", function () {
     }
 });
 
+document.addEventListener('keydown', function(keyboardEvent) {
+    if (keyboardEvent.key === 'Enter') {
+        botonRegistro.click()
+    }
+});
+
 function guardarUsuarioCredenciales(usuario) {
     credenciales.usuarios.push(usuario);
     localStorage.setItem("credenciales", JSON.stringify(credenciales));
