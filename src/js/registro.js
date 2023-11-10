@@ -21,7 +21,7 @@ const alertaPassword2 = document.getElementById("alertaPassword2");
 const alertaRegistro = document.getElementById("alertaRegistro");
 
 const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
-const exReNoAp = /^.{2,20}$/;
+const exReNoAp = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{2,20}$/;
 const exReNick = /^\w{4,10}$/;
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
 
@@ -109,12 +109,11 @@ botonRegistro.addEventListener("click", function () {
     }
 
     if (validaciones.includes(false)) {
-        
     } else {
         let aux = comprobarRegistrados(email, nick);
         if (aux["valido"]) {
-            let user = new Usuario(nombre, apellidos, email, nick, psw,[],[]);
-            
+            let user = new Usuario(nombre, apellidos, email, nick, psw, [], []);
+
             user.asignarPilotos();
             user.asignarRivales();
             guardarUsuarioCredenciales(user);
