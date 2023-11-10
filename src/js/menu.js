@@ -46,7 +46,7 @@ function crearMenuHorizontal() {
     let nav = document.createElement("nav");
     nav.innerHTML =
         "<ul class='row'>" +
-        "<li class='two columns'><img id='logo' src='./assets/img/logoBlanco.svg'></li>" +
+        "<li class='two columns'><img id='logo' src='https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/logoBlanco.svg'></li>" +
         "<li class='one column'><a href='home.html'>Home</a></li>" +
         "<li class='one column'><a href='pilotos.html'>Pilotos</a></li>" +
         "<li class='one column'><a href='perfil.html'>Perfil</a></li>" +
@@ -69,7 +69,7 @@ export function crearMenuVertical() {
     let nav = document.createElement("nav");
     nav.innerHTML =
         "<ul>" +
-        "<li><img id='logo'src='./assets/img/logoBlanco.svg'></li>" +
+        "<li><img id='logo'src='https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/logoBlanco.svg'></li>" +
         "<li><a href='home.html'>Home</a></li>" +
         "<li><a href='pilotos.html'>Pilotos</a></li>" +
         "<li><a href='perfil.html'>Perfil</a></li>" +

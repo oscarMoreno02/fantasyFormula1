@@ -1,9 +1,14 @@
-.fondo{
-    background-image:url(../assets/img/posible_fondo1.jpg);
+.fondo-registro{
+    background-image:url(https://oscardespliegue.000webhostapp.com/fotosf1/assets/fotos/renaultjpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+  }
 .cuerpo{
     height:90vh; display: flex; justify-content: center;
     .formulario-registro{
