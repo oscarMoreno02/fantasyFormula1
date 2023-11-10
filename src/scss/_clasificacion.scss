@@ -4,3 +4,20 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#section-clasificacion {
+    display: flex;
+
+    h2 {
+        text-align: center;
+    }
+
+    .tarjeta {
+        &:not(:last-child) {
+            border-right: 1px solid lightgray;
+            /* Establece el borde derecho */
+        }
+
+        padding: 4rem;
+    }
+}
