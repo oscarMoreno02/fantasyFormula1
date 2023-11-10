@@ -23,7 +23,7 @@ function crearJugadores() {
     let bot2 = usuario.rivales[1];
 
     let jugadores = ordenarJugadores(usuario, bot1, bot2);
-
+        console.log(jugadores)
     for (let i = 0; i < jugadores.length; i++) {
         let tarjeta = document.createElement("div");
         tarjeta.setAttribute("class", "tarjeta");
@@ -50,8 +50,23 @@ function crearJugadores() {
 
 function ordenarJugadores(jugador1, jugador2, jugador3) {
     let jugadores = [jugador1, jugador2, jugador3];
-
-    jugadores.sort((a, b) => b.puntuacion - a.puntuacion);
+    let i=0
+    while(i<2){
+        
+        let puntuacion1=jugadores[i].misPilotos[0].puntuacion+jugadores[i].misPilotos[1].puntuacion
+        let puntuacion2=jugadores[i+1].misPilotos[0].puntuacion+jugadores[i+1].misPilotos[1].puntuacion
+        if(puntuacion1<puntuacion2){
+            
+            let j1=jugadores[i]
+            let j2=jugadores[i+1]
+            jugadores[i]=j2
+            jugadores[i+1]=j1
+            i=0
+        }else{
+            i++
+        }
+       
+    }
 
     return jugadores;
 }
