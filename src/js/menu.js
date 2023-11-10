@@ -6,6 +6,7 @@ export function crearMenu() {
     }
     crearListenerMenu();
     crearListenerTema();
+    crearListenerSesion();
 }
 
 export function cambiarMenu() {
@@ -54,6 +55,7 @@ function crearMenuHorizontal() {
         "<li class='one column'><a href='clasificacion.html'>Clasificación</a></li>" +
         "<li class='one column'><button id='btn-menu'>Cambiar menú</button></li>" +
         "<li class='one column'><button id='btn-tema'>Cambiar tema</button></li>" +
+        "<li class='one column'><button id='btn-sesion'>Cerrar sesión</button></li>" +
         "</ul>";
     menu.appendChild(nav);
 }
@@ -77,6 +79,7 @@ export function crearMenuVertical() {
         "<li><a href='clasificacion.html'>Clasificación</a></li>" +
         "<li><button id='btn-menu'>Cambiar menú</button></li>" +
         "<li><button id='btn-tema'>Cambiar tema</button></li>" +
+        "<li class='one column'><button id='btn-sesion'>Cerrar sesión</button></li>" +
         "</ul>";
     menu.appendChild(nav);
 }
@@ -94,5 +97,14 @@ function crearListenerTema() {
 
     boton.addEventListener("click", function () {
         cambiarTema();
+    });
+}
+
+function crearListenerSesion() {
+    let boton = document.getElementById("btn-sesion");
+
+    boton.addEventListener("click", function () {
+        localStorage.removeItem("usuario");
+        window.location.reload();
     });
 }
