@@ -11,6 +11,7 @@ let grandesPremios = JSON.parse(localStorage.getItem("grandes-premios"));
 console.log(grandesPremios);
 if (datos != null) {
     let u = JSON.parse(datos);
+
     usuario = new Usuario(
         u.nombre,
         u.apellidos,

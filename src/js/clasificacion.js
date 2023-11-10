@@ -10,6 +10,9 @@ crearJugadores();
 
 function crearJugadores() {
     let datos = JSON.parse(localStorage.getItem("usuario"));
+    if(datos==null){
+        window.location.href='index.html'
+    }
     let usuario = new Usuario(
         datos.nombre,
         datos.apellidos,
@@ -23,7 +26,7 @@ function crearJugadores() {
     let bot2 = usuario.rivales[1];
 
     let jugadores = ordenarJugadores(usuario, bot1, bot2);
-        console.log(jugadores)
+      
     for (let i = 0; i < jugadores.length; i++) {
         let tarjeta = document.createElement("div");
         tarjeta.setAttribute("class", "tarjeta");

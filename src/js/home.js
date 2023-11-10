@@ -6,7 +6,7 @@ import { noDisputado } from "./comunes.js";
 let usuario = new Usuario();
 let datos = localStorage.getItem("usuario");
 
-console.log(datos);
+
 if (datos != null) {
     let u = JSON.parse(datos);
     usuario = new Usuario(

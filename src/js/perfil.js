@@ -31,10 +31,10 @@ const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
 let usuario = new Usuario();
 
 let datos = localStorage.getItem("usuario");
-console.log(datos);
+
 if (datos != null) {
     let u = JSON.parse(datos);
-    console.log(u);
+   
     usuario = new Usuario(
         u.nombre,
         u.apellidos,
@@ -70,7 +70,7 @@ if (datos != null) {
 }
 
 inputNombre.setAttribute("placeholder", usuario.nombre);
-console.log(usuario.apellidos);
+
 inputApellidos.setAttribute("placeholder", usuario.apellidos);
 inputNick.setAttribute("placeholder", usuario.nick);
 inputEmail.setAttribute("placeholder", usuario.email);
