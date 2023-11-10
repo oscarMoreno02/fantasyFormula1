@@ -21,7 +21,7 @@ export function cambiarMenu() {
 export function cambiarTema() {
     if (localStorage.getItem("tema") == "claro") {
         let menu = document.getElementById("menu");
-        menu.setAttribute("class", "oscuro");
+        menu.className += " oscuro";
         let botonMenu = document.getElementById("btn-menu");
         botonMenu.setAttribute("class", "button-primary");
         let botonTema = document.getElementById("btn-tema");
@@ -30,11 +30,11 @@ export function cambiarTema() {
         localStorage.setItem("tema", "oscuro");
     } else {
         let menu = document.getElementById("menu");
-        menu.setAttribute("class", "");
+        menu.classList.remove("oscuro");
         let botonMenu = document.getElementById("btn-menu");
-        botonMenu.setAttribute("class", "");
+        botonMenu.classList.remove("button-primary");
         let botonTema = document.getElementById("btn-tema");
-        botonTema.setAttribute("class", "");
+        botonTema.classList.remove("button-primary");
 
         localStorage.setItem("tema", "claro");
     }
@@ -75,8 +75,8 @@ export function crearMenuVertical() {
         "<li><a href='perfil.html'>Perfil</a></li>" +
         "<li><a href='administracion.html'>Administración</a></li>" +
         "<li><a href='clasificacion.html'>Clasificación</a></li>" +
-        "<li><button id='btn-menu''>Cambiar menú</button></li>" +
-        "<li><button id='btn-tema''>Cambiar tema</button></li>" +
+        "<li><button id='btn-menu'>Cambiar menú</button></li>" +
+        "<li><button id='btn-tema'>Cambiar tema</button></li>" +
         "</ul>";
     menu.appendChild(nav);
 }
