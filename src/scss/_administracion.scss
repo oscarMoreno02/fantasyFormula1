@@ -12,4 +12,18 @@
 
     height: auto;
     font-size: min(4rem, 4vw);
+
+    &:disabled {
+        color: $color-black;
+        background-color: slategrey;
+        opacity: 80%;
+        border: none;
+    }
+
+    &:disabled:hover {
+        color: $color-black;
+        background-color: slategrey;
+        opacity: 80%;
+        border: none;
+    }
 }

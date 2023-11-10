@@ -49,3 +49,7 @@ export function crearPilotos() {
 
     return competidores;
 }
+
+export function noDisputado(granPremio) {
+    return granPremio.disputado === false;
+}

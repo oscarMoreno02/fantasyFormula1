@@ -1,15 +1,17 @@
-import { puntuaciones, grandesPremios } from "./objetos.js";
+import { puntuaciones } from "./objetos.js";
 import { Usuario } from "./clases.js";
 import { crearMenu, cambiarTema } from "./menu.js";
-import { crearPilotos } from "./comunes.js";
+import { crearPilotos, noDisputado } from "./comunes.js";
 
 let usuario = new Usuario();
 
 let datos = localStorage.getItem("usuario");
+let grandesPremios = JSON.parse(localStorage.getItem("grandes-premios"));
 
+console.log(grandesPremios);
 if (datos != null) {
     let u = JSON.parse(datos);
-  
+
     usuario = new Usuario(
         u.nombre,
         u.apellidos,
@@ -25,6 +27,11 @@ if (datos != null) {
 crearMenu();
 
 const botonLanzarCarrera = document.getElementById("lanzar-carrera");
+
+console.log(grandesPremios.find(noDisputado));
+if (grandesPremios.find(noDisputado) == undefined) {
+    botonLanzarCarrera.setAttribute("disabled", "true");
+}
 
 botonLanzarCarrera.addEventListener("click", function () {
     let carreras = disputarGranPremio(grandesPremios);
