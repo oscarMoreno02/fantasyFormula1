@@ -14,7 +14,7 @@ const botonLogin = document.getElementById("login");
 const botonRegistro = document.getElementById("btn-registro");
 const alertaLogin = document.getElementById("alertaLogin");
 
-const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
+const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{2,3}$/;
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
 
 let datos = localStorage.getItem("credenciales");

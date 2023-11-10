@@ -24,7 +24,7 @@ const alertaPassword2 = document.getElementById("alertaPassword2");
 const alertaCambioDatos = document.getElementById("alertaCambioDatos");
 const alertaCambioPassword = document.getElementById("alertaCambioPassword");
 
-const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{3,4}$/;
+const exReEmail = /^\w{2,15}@[A-Za-z0-9]+\.[A-Za-z]{2,3}$/;
 const exReNoAp = /^.{2,20}$/;
 const exRePassword = /^[A-Za-z0-9*#$]{6,12}$/;
 
