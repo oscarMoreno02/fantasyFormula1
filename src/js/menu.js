@@ -23,8 +23,8 @@ export function cambiarTema() {
     if (localStorage.getItem("tema") == "claro") {
         let menu = document.getElementById("menu");
         menu.className += " oscuro";
-        let footer = document.getElementsByTagName("footer");
-        footer[0].className += " oscuro";
+        let footer = document.getElementById("footer");
+        footer.className += " oscuro";
         let botonMenu = document.getElementById("btn-menu");
         botonMenu.setAttribute("class", "button-primary");
         let botonTema = document.getElementById("btn-tema");
@@ -34,7 +34,7 @@ export function cambiarTema() {
     } else {
         let menu = document.getElementById("menu");
         menu.classList.remove("oscuro");
-        let footer = document.getElementsByTagName("footer");
+        let footer = document.getElementById("footer");
         footer.classList.remove("oscuro");
         let botonMenu = document.getElementById("btn-menu");
         botonMenu.classList.remove("button-primary");
@@ -49,8 +49,8 @@ function crearMenuHorizontal() {
     let menu = document.getElementById("menu");
     menu.innerHTML = "";
 
-    let footer = document.getElementsByTagName("footer");
-    footer[0].setAttribute("display", "none");
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "1";
 
     let nav = document.createElement("nav");
     nav.innerHTML =
@@ -72,8 +72,8 @@ export function crearMenuVertical() {
     let main = document.getElementsByTagName("main");
     main[0].setAttribute("class", "eight columns offset-by-one");
 
-    let footer = document.getElementsByTagName("footer");
-    footer[0].setAttribute("display", "block");
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "0";
 
     let menu = document.getElementById("menu");
     menu.innerHTML = "";

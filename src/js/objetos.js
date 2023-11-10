@@ -8,7 +8,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/george-russell.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/george-russell.jpg",
     },
 
     {
@@ -20,7 +21,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lewis-hamilton.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lewis-hamilton.jpg",
     },
     {
         id: 3,
@@ -31,7 +33,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/pierre-gasly.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/pierre-gasly.jpg",
     },
     {
         id: 4,
@@ -42,7 +45,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/esteban-ocon.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/esteban-ocon.jpg",
     },
     {
         id: 5,
@@ -53,7 +57,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/nico-hulkenberg.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/nico-hulkenberg.jpg",
     },
     {
         id: 6,
@@ -64,7 +69,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/kevin-magnussen.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/kevin-magnussen.jpg",
     },
     {
         id: 7,
@@ -75,7 +81,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lando-norris.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lando-norris.jpg",
     },
     {
         id: 8,
@@ -86,7 +93,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/oscar-piastri.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/oscar-piastri.jpg",
     },
     {
         id: 9,
@@ -97,7 +105,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/max-verstappen.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/max-verstappen.jpg",
     },
     {
         id: 10,
@@ -108,7 +117,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/sergio-perez.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/sergio-perez.jpg",
     },
     {
         id: 11,
@@ -119,7 +129,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/fernando-alonso.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/fernando-alonso.jpg",
     },
     {
         id: 12,
@@ -130,7 +141,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lance-stroll.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/lance-stroll.jpg",
     },
     {
         id: 13,
@@ -141,7 +153,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/yuki-tsunoda.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/yuki-tsunoda.jpg",
     },
     {
         id: 14,
@@ -152,7 +165,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/nyck-de-vries.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/nyck-de-vries.jpg",
     },
     {
         id: 15,
@@ -163,7 +177,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/charles-leclerc.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/charles-leclerc.jpg",
     },
     {
         id: 16,
@@ -174,7 +189,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/carlos-sainz.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/carlos-sainz.jpg",
     },
     {
         id: 17,
@@ -185,7 +201,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/valtteri-bottas.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/valtteri-bottas.jpg",
     },
     {
         id: 18,
@@ -196,7 +213,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/guanyu-zhou.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/guanyu-zhou.jpg",
     },
     {
         id: 19,
@@ -207,7 +225,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/alexander-albon.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/alexander-albon.jpg",
     },
     {
         id: 20,
@@ -218,7 +237,8 @@ export var pilotos = [
         puntuacion: 0,
         propiedadJugador: "",
         rol: "",
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/logan-sargeant.jpg",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/pilotos/logan-sargeant.jpg",
     },
 ];
 
@@ -236,7 +256,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/bahrein.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/bahrein.png",
     },
     {
         id: 2,
@@ -249,7 +270,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/arabia-saudi.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/arabia-saudi.png",
     },
     {
         id: 3,
@@ -262,7 +284,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/australia.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/australia.png",
     },
     {
         id: 4,
@@ -275,7 +298,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/baku.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/baku.png",
     },
     {
         id: 5,
@@ -288,7 +312,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/miami.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/miami.png",
     },
     {
         id: 6,
@@ -301,7 +326,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/emilia-romana.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/emilia-romana.png",
     },
     {
         id: 7,
@@ -314,7 +340,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/monaco.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/monaco.png",
     },
     {
         id: 8,
@@ -327,7 +354,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/barcelona.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/barcelona.png",
     },
     {
         id: 9,
@@ -340,7 +368,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/canada.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/canada.png",
     },
     {
         id: 10,
@@ -353,11 +382,12 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/austria.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/austria.png",
     },
     {
         id: 11,
-        nringausombre: "Gran Premio de Gran Bretaña",
+        nombre: "Gran Premio de Gran Bretaña",
         ubicacion: "Silverstone (Reino Unido)",
         descripcion:
             "La longitud del circuito es de 5,891 kilómetros. Durante la carrera se dan 52 vueltas al circuito cubriendo una distancia final de 306,332 kilómetros.",
@@ -366,7 +396,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/silverstone.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/silverstone.png",
     },
     {
         id: 12,
@@ -379,7 +410,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/hungaroring.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/hungaroring.png",
     },
     {
         id: 13,
@@ -392,7 +424,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/spa.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/spa.png",
     },
     {
         id: 14,
@@ -405,7 +438,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/paises-bajos.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/paises-bajos.png",
     },
     {
         id: 15,
@@ -418,7 +452,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/monza.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/monza.png",
     },
     {
         id: 16,
@@ -431,7 +466,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/singapur.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/singapur.png",
     },
     {
         id: 17,
@@ -444,7 +480,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/suzuka.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/suzuka.png",
     },
     {
         id: 18,
@@ -457,7 +494,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/bahrein.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/bahrein.png",
     },
     {
         id: 19,
@@ -470,7 +508,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/austin.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/austin.png",
     },
     {
         id: 20,
@@ -483,7 +522,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/mexico.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/mexico.png",
     },
     {
         id: 21,
@@ -496,7 +536,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/brasil.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/brasil.png",
     },
     {
         id: 22,
@@ -509,7 +550,8 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/las-vegas.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/las-vegas.png",
     },
     {
         id: 23,
@@ -522,6 +564,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/abu-dhabi.png",
+        srcFoto:
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/circuitos/abu-dhabi.png",
     },
 ];
