@@ -163,9 +163,14 @@ Los botones principales usarán el color de fondo `F1 Warm Red` y los secundario
 
 En el tema oscuro, se invertirán los colores de los botones secundarios y se mantendrá el de los principales.
 
-## MAPA DE NAVEGACIÓN
+## Wireframe
+
+![Wireframe del proyecto](./readme/F1_Fantasy_Wireframe.pdf)
+
+## Mapa de Navegación
 
 ![Esquema del mapa de navegación](<readme/mapa de navegación f1(2).png>)
+
 ## Recursos
 
 - [Fuentes](https://imjustcreative.com/download-f1-fonts-formula-1-fonts/2021/09/16)
