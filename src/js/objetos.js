@@ -249,7 +249,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/arabia-saudi.png",
     },
     {
         id: 3,
@@ -262,7 +262,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/australia.png",
     },
     {
         id: 4,
@@ -288,7 +288,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/miami.png",
     },
     {
         id: 6,
@@ -340,7 +340,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/canada.png",
     },
     {
         id: 10,
@@ -405,7 +405,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/paises-bajos.png",
     },
     {
         id: 15,
@@ -496,7 +496,7 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/brasil.png",
     },
     {
         id: 22,
@@ -509,11 +509,11 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/las-vegas.png",
     },
     {
         id: 23,
-        nombre: "Gran Premio de Abu Dabi",
+        nombre: "Gran Premio de Abu Dhabi",
         ubicacion: "Abu Dabi (Emiratos Árabes)",
         descripcion:
             "La longitud del circuito es de 5,281 kilómetros. Durante la carrera se dan 58 vueltas al circuito cubriendo una distancia final de 306,298 kilómetros.",
@@ -522,6 +522,6 @@ export var grandesPremios = [
             { idPiloto: 0, posicion: 0 },
         ],
         disputado: false,
-        srcFoto: "",
+        srcFoto: "./assets/img/circuitos/abu-dhabi.png",
     },
 ];
