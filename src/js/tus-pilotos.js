@@ -16,6 +16,9 @@ btnAsignarTitular.addEventListener("click", function () {
 
 function crearPilotos() {
     let usuario = JSON.parse(localStorage.getItem("usuario"));
+    if(usuario==null){
+        window.location.href='index.html'
+    }
     let tusPilotos = usuario.misPilotos;
 
     mostrarPilotos(divTusPilotos, tusPilotos);
@@ -49,11 +52,10 @@ function cambiarTitular() {
         let i = 0;
 
         while (continuar < 1) {
-            console.log(tusPilotos[0]);
+          
 
             if (listaPilotos[i].id == tusPilotos[0].id) {
-                console.log(tusPilotos[0]);
-                console.log(listaPilotos[i]);
+               
                 listaPilotos[i].rol = " Titular";
 
                 continuar++;
@@ -65,8 +67,7 @@ function cambiarTitular() {
 
         while (continuar < 1) {
             if (listaPilotos[i].id == tusPilotos[1].id) {
-                console.log(tusPilotos[1]);
-                console.log(listaPilotos[i]);
+    
                 listaPilotos[i].rol = " Suplente";
 
                 continuar++;

@@ -45,7 +45,6 @@ if (datos != null) {
     }
     credenciales.usuarios = lista;
 }
-console.log(credenciales);
 
 inputPassword1.addEventListener("input", function () {
     let psw = inputPassword1.value;
@@ -110,12 +109,12 @@ botonRegistro.addEventListener("click", function () {
     }
 
     if (validaciones.includes(false)) {
-        console.log(mensaje);
+        
     } else {
         let aux = comprobarRegistrados(email, nick);
         if (aux["valido"]) {
             let user = new Usuario(nombre, apellidos, email, nick, psw,[],[]);
-            console.log(user);
+            
             user.asignarPilotos();
             user.asignarRivales();
             guardarUsuarioCredenciales(user);

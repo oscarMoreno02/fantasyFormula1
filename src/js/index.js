@@ -36,7 +36,7 @@ if (datos != null) {
     }
     credenciales.usuarios = lista;
 }
-console.log(credenciales);
+
 
 botonLogin.addEventListener("click", function () {
     let e = document.getElementById("email").value;
@@ -50,13 +50,13 @@ botonLogin.addEventListener("click", function () {
     } else {
         alertaLogin.textContent = msg["mensaje"];
     }
-    console.log(credenciales);
+   
 });
 botonLogin.addEventListener("click", function () {
     let e = document.getElementById("email").value;
     let p = document.getElementById("password").value;
     let msg = {};
-    console.log((msg = validarInicio(e, p)));
+    msg = validarInicio(e, p);
 
     if (msg["valido"]) {
         let u = JSON.stringify(msg["user"]);
@@ -78,7 +78,7 @@ function validarInicio(email, password) {
     let correcto = {};
     if (validarFormatoEmail(email) && validarFormatoPassword(password)) {
         let info = comprobarRegistro(email, password);
-        console.log(info);
+      
         if (info["valido"]) {
             correcto["valido"] = true;
             correcto["user"] = info["user"];
@@ -101,7 +101,7 @@ function comprobarRegistro(e, p) {
     let msg = {};
     while (i < credenciales.usuarios.length && !correcto) {
         let u = credenciales.usuarios[i];
-        console.log(u);
+        
         if (u && u.password && u.email) {
             if (e == u.email && p == u.password) {
                 msg["user"] = new Usuario(

@@ -8,7 +8,7 @@ let datos = localStorage.getItem("usuario");
 
 if (datos != null) {
     let u = JSON.parse(datos);
-    console.log(u);
+
     usuario = new Usuario(
         u.nombre,
         u.apellidos,
@@ -26,5 +26,5 @@ let sectionPilotos = document.getElementById("section-pilotos");
 
 crearMenu();
 let pilotos = crearPilotos();
-console.log(pilotos)
+
 mostrarPilotos(sectionPilotos, pilotos);

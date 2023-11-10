@@ -5,10 +5,10 @@ import { Usuario } from "./clases.js";
 let usuario = new Usuario();
 let datos = localStorage.getItem("usuario");
 
-console.log(datos);
+
 if (datos != null) {
     let u = JSON.parse(datos);
-    console.log(u);
+
     usuario = new Usuario(
         u.nombre,
         u.apellidos,
