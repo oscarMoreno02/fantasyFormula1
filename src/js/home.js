@@ -38,11 +38,15 @@ function cargarNoticias() {
 
         var primerNoDisputado = grandesPremiosActualizados.find(noDisputado);
     } else {
+        localStorage.setItem("grandes-premios", JSON.stringify(grandesPremios));
         var primerNoDisputado = grandesPremios.find(noDisputado);
+        fotoCarrera.setAttribute(
+            "src",
+            "https://oscardespliegue.000webhostapp.com/fotosf1/assets/img/fin.jpg"
+        );
     }
 
     if (primerNoDisputado) {
-        console.log(primerNoDisputado);
         nombreCarrera.innerText = primerNoDisputado.nombre;
         ubicacionCarrera.innerText = primerNoDisputado.ubicacion;
         descripcionCarrera.innerText = primerNoDisputado.descripcion;
